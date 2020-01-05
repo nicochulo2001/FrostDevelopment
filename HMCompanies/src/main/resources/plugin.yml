@@ -1,0 +1,11 @@
+name: Companies
+version: ${project.version}
+main: frostdev.companies.Companies
+api-version: 1.13
+authors: [MagnusFrost]
+description: Compandies Plugin Developed for the HelloMiners Minecraft Server
+
+commands:
+  companies:
+    description: Main command.
+    aliases: [comp]

@@ -1,0 +1,7 @@
+frostdev\companies\DBHandler\CompaniesCreateCompany.class
+frostdev\companies\DBHandler\CompanyRegionHandler.class
+frostdev\companies\DBHandler\CompanyEcon.class
+frostdev\companies\Command.class
+frostdev\companies\DBHandler\CompanyDataGet.class
+frostdev\companies\Companies.class
+frostdev\companies\DBHandler\CompanyDataCommit.class

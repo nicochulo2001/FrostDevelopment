@@ -1,12 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyCreate.java" line="30" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyMembersCommit.java" line="17" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyDataGet.java" line="93" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyCreate.java" line="27" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyMembersCommit.java" line="12" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyDataGet.java" line="77" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="867f2a08-8931-45c7-9327-75445ede8fac" name="Default Changelist" comment="" />
+    <list default="true" id="867f2a08-8931-45c7-9327-75445ede8fac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../HMCompanies/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/PlayerDataCommit/PlayerDataCommit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/PlayerDataCommit/PlayerDataCreate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/CompanyExists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMCompanies/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HMCompanies/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMCompanies/Dependencies/frostdev-ALPHA-0.1-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../HMCompanies/Dependencies/frostdev-ALPHA-0.1-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMCompanies/src/main/java/frostdev/companies/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HMCompanies/src/main/java/frostdev/companies/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMCompanies/target/companies-1.0-SNAPSHOT-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../HMCompanies/target/companies-1.0-SNAPSHOT-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMCompanies/target/companies-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../HMCompanies/target/companies-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMCompanies/target/original-companies-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../HMCompanies/target/original-companies-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ae0d5e27-b829-4401-b73b-55a73f9d4fb0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ae0d5e27-b829-4401-b73b-55a73f9d4fb0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyDataGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyDataGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyMembersCommit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyMembersCommit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyMembersCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyMembersCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBCOMMIT/PlayerEconCommit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBCOMMIT/TableSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/TableSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBCOMMIT/UserDataCommit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBConnect/MySQLConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBConnect/MySQLConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/HMDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/HMDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Listeners/EconListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Listeners/EconListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Listeners/LogInListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Listeners/LogInListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Runnable/EconTimer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Runnable/async.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/CommandHMDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/CommandHMDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/GetItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/GetItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/GetPlayerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frostdev/frostdev/PlayerDataCommit/PlayerDataGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frostdev/frostdev/CompanyDataCommit/CompanyCreate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frostdev/frostdev/CompanyDataCommit/CompanyCreate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frostdev/frostdev/CompanyDataCommit/CompanyDataGet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frostdev/frostdev/CompanyDataCommit/CompanyDataGet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frostdev/frostdev/CompanyDataCommit/CompanyMembersCommit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frostdev/frostdev/CompanyDataCommit/CompanyMembersCommit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frostdev/frostdev/CompanyDataCommit/CompanyMembersCreate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frostdev/frostdev/CompanyDataCommit/CompanyMembersCreate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frostdev/frostdev/DBCOMMIT/PlayerEconCommit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frostdev/frostdev/DBCOMMIT/TableSetup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frostdev/frostdev/DBCOMMIT/UserDataCommit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frostdev/frostdev/DBConnect/MySQLConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frostdev/frostdev/DBConnect/MySQLConnect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frostdev/frostdev/HMDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frostdev/frostdev/HMDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frostdev/frostdev/Listeners/EconListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frostdev/frostdev/Listeners/EconListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frostdev/frostdev/Listeners/LogInListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frostdev/frostdev/Listeners/LogInListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frostdev/frostdev/Runnable/EconTimer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frostdev/frostdev/Runnable/async$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frostdev/frostdev/Runnable/async.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frostdev/frostdev/Util/CommandHMDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frostdev/frostdev/Util/CommandHMDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frostdev/frostdev/Util/GetItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/frostdev/frostdev/Util/GetItems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/frostdev/frostdev/Util/GetPlayerData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/frostdev-ALPHA-0.1-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/frostdev-ALPHA-0.1-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/frostdev-ALPHA-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/frostdev-ALPHA-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-frostdev-ALPHA-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-frostdev-ALPHA-0.1.jar" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,6 +98,13 @@
         <item name="hmdb@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="hmdb: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="companies: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hmdb@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="hmdb: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="userdata: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
@@ -58,10 +116,130 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/PlayerDataCommit/PlayerDataCommit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-119">
+              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/HMDB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="51" column="53" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#Config#0;class#HMDB#0" />
+                <element signature="method#setupEconomy#0;class#HMDB#0" />
+                <element signature="e#4376#4377#0" expanded="true" />
+                <element signature="e#4417#4418#0" expanded="true" />
+                <element signature="e#5448#5449#0" expanded="true" />
+                <element signature="e#4770#4771#0" expanded="true" />
+                <element signature="e#4818#4819#0" expanded="true" />
+                <element signature="e#5087#5088#0" expanded="true" />
+                <element signature="e#5147#5148#0" expanded="true" />
+                <element signature="e#6244#6245#0" expanded="true" />
+                <element signature="e#6476#6477#0" expanded="true" />
+                <element signature="e#5562#5563#0" expanded="true" />
+                <element signature="e#5636#5637#0" expanded="true" />
+                <element signature="e#5685#5686#0" expanded="true" />
+                <element signature="e#5729#5730#0" expanded="true" />
+                <element signature="e#5778#5779#0" expanded="true" />
+                <element signature="e#5822#5823#0" expanded="true" />
+                <element signature="method#tableExists#0;class#HMDB#0" />
+                <element signature="e#5967#5968#0" expanded="true" />
+                <element signature="e#6008#6009#0" expanded="true" />
+                <element signature="e#6058#6059#0" expanded="true" />
+                <element signature="e#6127#6128#0" expanded="true" />
+                <element signature="e#7191#7192#0" expanded="true" />
+                <element signature="e#7267#7268#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Listeners/EconListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Listeners/LogInListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyCreate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+            <state relative-caret-position="719">
+              <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/TableSetup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/CommandHMDB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="619">
+              <caret line="54" column="64" lean-forward="true" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBConnect/MySQLConnect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="31" column="44" lean-forward="true" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/PlayerDataCommit/PlayerDataCreate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="928">
+              <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,123 +250,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyMembersCreate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyMembersGet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyMembersCommit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="46" column="9" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="46" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/GetPlayerData.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
-              <caret line="52" column="38" lean-forward="true" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+              <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBCOMMIT/PlayerEconCommit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBCOMMIT/UserDataCommit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyDataCommit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyDataGet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1435">
-              <caret line="87" column="98" selection-start-line="87" selection-start-column="98" selection-end-line="87" selection-end-column="98" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/HMDB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#Config#0;class#HMDB#0" />
-                <element signature="method#setupEconomy#0;class#HMDB#0" />
-                <element signature="e#3412#3413#0" expanded="true" />
-                <element signature="e#3438#3439#0" expanded="true" />
-                <element signature="e#4439#4440#0" expanded="true" />
-                <element signature="e#4465#4466#0" expanded="true" />
-                <element signature="e#4718#4719#0" expanded="true" />
-                <element signature="e#4743#4744#0" expanded="true" />
-                <element signature="e#4812#4813#0" expanded="true" />
-                <element signature="e#4852#4853#0" expanded="true" />
-                <element signature="e#3673#3674#0" expanded="true" />
-                <element signature="e#3715#3716#0" expanded="true" />
-                <element signature="e#4321#4322#0" expanded="true" />
-                <element signature="e#4395#4396#0" expanded="true" />
-                <element signature="e#4616#4617#0" expanded="true" />
-                <element signature="e#4680#4681#0" expanded="true" />
-                <element signature="e#3757#3758#0" expanded="true" />
-                <element signature="e#3809#3810#0" expanded="true" />
-                <element signature="e#4733#4734#0" expanded="true" />
-                <element signature="e#4750#4751#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -203,6 +268,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -212,10 +280,8 @@
         <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Listeners/EconomyListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBCOMMIT/PlayerEconCommit.java" />
         <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Runnable/EconTimer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Listeners/EconListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/SetItemValue.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBConnect/MySQLConnect.java" />
         <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Runnable/async.java" />
         <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBCOMMIT/TableSetup.java" />
         <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/GetItemValue.java" />
@@ -223,18 +289,26 @@
         <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/LANG.java" />
         <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
         <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/GetPlayerBalance.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Listeners/LogInListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/GetPlayerData.java" />
         <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/GetItemData.java" />
         <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/GetItems.java" />
         <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBCOMMIT/CompanyDataCommit.java" />
         <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/TableExists.java" />
         <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/CommandHMDB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyCreate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyMembersCommit.java" />
         <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyMembersCreate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyDataGet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyMembersCommit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/MemberManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyDataCommit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/CompanyExists.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/PlayerDataCommit/PlayerDataCommit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyDataGet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/PlayerDataGet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/PlayerDataCommit/PlayerDataGet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Listeners/EconListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/PlayerDataCommit/PlayerDataCreate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/Listeners/LogInListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyCreate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBConnect/MySQLConnect.java" />
         <option value="$PROJECT_DIR$/src/main/java/frostdev/frostdev/HMDB.java" />
       </list>
     </option>
@@ -271,9 +345,12 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1513" />
-    <option name="width" value="1934" />
+    <option name="x" value="-7" />
+    <option name="width" value="1734" />
     <option name="height" value="1407" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -335,15 +412,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="frostdev" type="462c0819:PsiDirectoryNode" />
-              <item name="DBCOMMIT" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HMDB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HMDB" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="frostdev" type="462c0819:PsiDirectoryNode" />
               <item name="DBConnect" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -362,7 +430,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="frostdev" type="462c0819:PsiDirectoryNode" />
-              <item name="Runnable" type="462c0819:PsiDirectoryNode" />
+              <item name="PlayerDataCommit" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HMDB" type="b2602c69:ProjectViewProjectNode" />
@@ -372,13 +440,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="frostdev" type="462c0819:PsiDirectoryNode" />
               <item name="Util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HMDB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HMDB" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -393,6 +454,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="M:/HelloClan_Test_Server_2/frostyspawners" />
@@ -459,42 +521,43 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576826899880</updated>
-      <workItem from="1576826905304" duration="103435000" />
+      <workItem from="1576826905304" duration="120011000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103435000" />
+    <option name="totallyTimeSpent" value="120011000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1513" y="0" width="1934" height="1407" extended-state="0" />
+    <frame x="-7" y="0" width="1734" height="1407" extended-state="0" />
     <layout>
-      <window_info id="Image Layers" />
       <window_info id="Designer" />
-      <window_info id="UI Designer" />
+      <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12860192" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25746715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32967034" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32967034" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="SQL Generator" weight="0.32967034" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32967034" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" visible="true" weight="0.089605734" />
       <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" visible="true" weight="0.089647815" />
-      <window_info anchor="right" id="LuaJ" />
       <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="LuaJ" />
+      <window_info anchor="right" id="Database" weight="0.15173237" />
       <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" weight="0.3297491" />
+      <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -554,17 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Runnable/EconTimer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#402#418#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CommandHMDB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -582,16 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBConnect/MySQLConnect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/GetItemData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -600,26 +642,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2549#2550#0" expanded="true" />
             <element signature="e#2584#2585#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Listeners/LogInListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Listeners/EconListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -666,40 +688,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Runnable/async.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/TableExists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/CommandHMDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -734,16 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBCOMMIT/TableSetup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/SetItemValue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -754,77 +736,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/GetPlayerData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="52" column="38" lean-forward="true" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyMembersCreate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyMembersGet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyCreate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBCOMMIT/UserDataCommit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBCOMMIT/PlayerEconCommit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyMembersCommit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="46" column="9" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="46" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyDataCommit.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="41" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/TableExists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/MemberManager.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/CompanyExists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -833,8 +778,139 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyDataGet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1435">
-          <caret line="87" column="98" selection-start-line="87" selection-start-column="98" selection-end-line="87" selection-end-column="98" />
+        <state relative-caret-position="459">
+          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyMembersCommit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/PlayerDataCommit/PlayerDataGet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyMembersGet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBCOMMIT/PlayerEconCommit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyMembersCreate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/PlayerDataCommit/PlayerDataGet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Listeners/EconListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBCOMMIT/UserDataCommit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/PlayerDataCommit/PlayerDataCommit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/PlayerDataCommit/PlayerDataCreate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="928">
+          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Listeners/LogInListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyCreate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Runnable/EconTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/DBConnect/MySQLConnect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="31" column="44" lean-forward="true" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -843,30 +919,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/HMDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
+        <state relative-caret-position="238">
+          <caret line="51" column="53" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Config#0;class#HMDB#0" />
             <element signature="method#setupEconomy#0;class#HMDB#0" />
-            <element signature="e#3412#3413#0" expanded="true" />
-            <element signature="e#3438#3439#0" expanded="true" />
-            <element signature="e#4439#4440#0" expanded="true" />
-            <element signature="e#4465#4466#0" expanded="true" />
-            <element signature="e#4718#4719#0" expanded="true" />
-            <element signature="e#4743#4744#0" expanded="true" />
-            <element signature="e#4812#4813#0" expanded="true" />
-            <element signature="e#4852#4853#0" expanded="true" />
-            <element signature="e#3673#3674#0" expanded="true" />
-            <element signature="e#3715#3716#0" expanded="true" />
-            <element signature="e#4321#4322#0" expanded="true" />
-            <element signature="e#4395#4396#0" expanded="true" />
-            <element signature="e#4616#4617#0" expanded="true" />
-            <element signature="e#4680#4681#0" expanded="true" />
-            <element signature="e#3757#3758#0" expanded="true" />
-            <element signature="e#3809#3810#0" expanded="true" />
-            <element signature="e#4733#4734#0" expanded="true" />
-            <element signature="e#4750#4751#0" expanded="true" />
+            <element signature="e#4376#4377#0" expanded="true" />
+            <element signature="e#4417#4418#0" expanded="true" />
+            <element signature="e#5448#5449#0" expanded="true" />
+            <element signature="e#4770#4771#0" expanded="true" />
+            <element signature="e#4818#4819#0" expanded="true" />
+            <element signature="e#5087#5088#0" expanded="true" />
+            <element signature="e#5147#5148#0" expanded="true" />
+            <element signature="e#6244#6245#0" expanded="true" />
+            <element signature="e#6476#6477#0" expanded="true" />
+            <element signature="e#5562#5563#0" expanded="true" />
+            <element signature="e#5636#5637#0" expanded="true" />
+            <element signature="e#5685#5686#0" expanded="true" />
+            <element signature="e#5729#5730#0" expanded="true" />
+            <element signature="e#5778#5779#0" expanded="true" />
+            <element signature="e#5822#5823#0" expanded="true" />
+            <element signature="method#tableExists#0;class#HMDB#0" />
+            <element signature="e#5967#5968#0" expanded="true" />
+            <element signature="e#6008#6009#0" expanded="true" />
+            <element signature="e#6058#6059#0" expanded="true" />
+            <element signature="e#6127#6128#0" expanded="true" />
+            <element signature="e#7191#7192#0" expanded="true" />
+            <element signature="e#7267#7268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Runnable/async.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/TableSetup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frostdev/frostdev/Util/CommandHMDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="54" column="64" lean-forward="true" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

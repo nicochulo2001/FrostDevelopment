@@ -1,4 +1,4 @@
-package frostdev.frostdev.DBCOMMIT;
+package frostdev.frostdev.Util;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

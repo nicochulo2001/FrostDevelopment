@@ -1,99 +1,83 @@
 package frostdev.frostdev.CompanyDataCommit;
-
-import frostdev.frostdev.HMDB;
-
 import java.sql.*;
-import java.util.ArrayList;
 
 public class CompanyDataGet {
-    private HMDB main;
     private Connection connection;
     private String name;
-    private String des;
-    private String[] members;
-    private ArrayList<String> regions;
-    private boolean pub;
-    private double econ;
-    private double stock;
     private String UUID;
     private PreparedStatement statement;
     private ResultSet results;
 
-    public void GetData(String input){
-        this.main = new HMDB();
-        this.connection = main.GetConnection();
-        try {
-            this.statement = this.connection.prepareStatement("SELECT * FROM companies WHERE compname = "+ input);
+    public CompanyDataGet(Connection connection){
+        this.connection = connection;
+
+    }
+    private void QueryName(String name) throws SQLException {
+            this.statement = this.connection.prepareStatement("SELECT * FROM companies WHERE compname = "+ name);
             this.results = this.statement.executeQuery();
-        }catch (SQLException e){
-            try {
-                this.statement = this.connection.prepareStatement("SELECT * FROM companies WHERE UUID = "+ input);
-                this.results = this.statement.executeQuery();
-            }catch (SQLException e1){
-                try {
-                    this.statement = this.connection.prepareStatement("SELECT * FROM companies WHERE founder = "+ input);
-                    this.results = this.statement.executeQuery();
-                }catch (SQLException e2){
-                    try {
-                        this.statement = this.connection.prepareStatement("SELECT * FROM companies WHERE stock = "+ input);
-                        this.results = this.statement.executeQuery();
-                    }catch (SQLException e3){
-                        try {
-                            this.statement = this.connection.prepareStatement("SELECT * FROM companies WHERE public = "+ input);
-                            this.results = this.statement.executeQuery();
-                        }catch (SQLException e4){
-                            this.results = null;
-                        }
-                    }
-                }
-            }
-        }
     }
 
-    public String GetUUID(){
+    private void QueryUUID (String UUID) throws SQLException {
+        this.statement = this.connection.prepareStatement("SELECT * FROM companies WHERE  UUID = "+ UUID);
+        this.results = this.statement.executeQuery();
+
+    }
+
+    public String GetUUID(String name){
         try {
+            this.QueryName(name);
+            this.name = this.CompanyName(UUID);
             return this.UUID = this.results.getString("UUID");
         }catch (SQLException e){
             return "No company found by the name of '" + this.name + "', please check for typos.";
         }
     }
-    public String CompanyName(){
+    public String CompanyName(String UUID){
         try {
+            this.QueryUUID(UUID);
             return this.UUID = this.results.getString("compname");
         }catch (SQLException e){
-            return "No company found by the name of '" + this.name + "', please check for typos.";
+            return "No company found by the UUID of '" + UUID + "', please check for typos.";
         }
     }
 
-    public String CompanyStockPrice(){
+    public String CompanyStockPrice(String UUID){
         try {
+            this.QueryUUID(UUID);
+            this.name = this.CompanyName(UUID);
             return this.UUID = this.results.getString("stock");
         }catch (SQLException e){
-            return "No company found by the name of '" + this.name + "', please check for typos.";
+            return "No company found by the UUID of '" + UUID + "', please check for typos.";
         }
     }
 
-    public String IsCompanyPublic(){
+    public String IsCompanyPublic(String UUID){
         try {
+            this.QueryUUID(UUID);
+            this.name = this.CompanyName(UUID);
             return this.UUID = this.results.getString("UUID");
         }catch (SQLException e){
-            return "No company found by the name of '" + this.name + "', please check for typos.";
+            return "No company found by the UUID of '" + UUID + "', please check for typos.";
         }
     }
 
-    public String CompanyEcon(){
+    public String CompanyEcon(String UUID){
         try {
-            return this.UUID = this.results.getString("UUID");
+            this.QueryUUID(UUID);
+            this.name = this.CompanyName(UUID);
+            return this.UUID = this.results.getString("public");
         }catch (SQLException e){
-            return "No company found by the name of '" + this.name + "', please check for typos.";
+            return "No company found by the UUID of '" + UUID + "', please check for typos.";
         }
     }
 
-    public String CompanyDescription(){
+    public String CompanyDescription(String UUID){
         try {
-            return this.des = this.results.getBlob("textcompdata").toString();
+            this.QueryUUID(UUID);
+            this.name = this.CompanyName(UUID);
+            return this.results.getBlob("textcompdata").toString();
         }catch (SQLException e){
-            return "No company found by the name of '" + this.name + "', please check for typos.";
+            return "No company found by the UUID of '" + UUID + "', please check for typos.";
         }
     }
 

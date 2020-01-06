@@ -3,8 +3,8 @@ package frostdev.companies;
 import frostdev.companies.DBHandler.CompaniesCreateCompany;
 import frostdev.frostdev.CompanyDataCommit.CompanyCreate;
 import frostdev.frostdev.HMDB;
+import frostdev.frostdev.PlayerDataCommit.PlayerDataGet;
 import frostdev.frostdev.Util.GetItems;
-import frostdev.frostdev.Util.GetPlayerData;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -30,7 +30,7 @@ public class Command implements CommandExecutor {
                     sender.sendMessage(this.prefix + " No Player name defined.");
                     return false;
                 } else {
-                    GetPlayerData getPlayerData = new GetPlayerData(main, args[1]);
+                    PlayerDataGet getPlayerData = new PlayerDataGet(main, args[1]);
                     if(getPlayerData.isValidPlayer()) {
                         sender.sendMessage(this.prefix + " Player " + args[1] + " has a balance of $" + getPlayerData.ReturnPlayerBalance());
                         return true;
@@ -39,7 +39,7 @@ public class Command implements CommandExecutor {
                     }
                 }
             } if (args[0].equals("company")) {
-                GetPlayerData getPlayerData = new GetPlayerData(main, args[1]);
+                PlayerDataGet getPlayerData = new PlayerDataGet(main, args[1]);
                 if (getPlayerData.isValidPlayer()) {
                     sender.sendMessage(this.prefix + " Player " + args[1] + " is a member of " + getPlayerData.ReturnPlayerCompany());
                     return true;
@@ -51,7 +51,7 @@ public class Command implements CommandExecutor {
                     sender.sendMessage(this.prefix + " No Player name defined.");
                     return false;
                 } else {
-                    GetPlayerData getPlayerData = new GetPlayerData(main, args[1]);
+                    PlayerDataGet getPlayerData = new PlayerDataGet(main, args[1]);
                     if (getPlayerData.isValidPlayer()) {
                         sender.sendMessage(this.prefix + " Player " + args[1] + "'s UUID is  " + getPlayerData.ReturnPlayerUUID());
                         return true;

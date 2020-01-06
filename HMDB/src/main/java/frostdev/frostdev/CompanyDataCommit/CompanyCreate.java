@@ -1,9 +1,8 @@
 package frostdev.frostdev.CompanyDataCommit;
 
-import frostdev.frostdev.DBCOMMIT.TableSetup;
+import frostdev.frostdev.Util.TableSetup;
 import frostdev.frostdev.HMDB;
 import frostdev.frostdev.Util.TableExists;
-import me.vagdedes.mysql.database.SQL;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

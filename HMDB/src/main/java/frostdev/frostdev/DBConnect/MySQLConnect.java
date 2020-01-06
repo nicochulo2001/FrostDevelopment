@@ -18,10 +18,10 @@ public class MySQLConnect {
 
 
 
-    public void OnConnect(HMDB as) {
+    public MySQLConnect(HMDB as) {
 
         this.main = as;
-        this.conf = new GetConfigData(main);
+        this.conf = as.getConfigData();
         this.host = conf.GetConfigString("database-host");
         this.port = conf.GetConfigInt("database-port");
         this.database = conf.GetConfigString("database-DBname");
@@ -32,18 +32,11 @@ public class MySQLConnect {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             System.err.println("jdbc driver unavailable!");
-            return;
         }
-        try {
-            openConnection();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
     }
 
-     private void openConnection() throws SQLException, ClassNotFoundException {
+     public void openConnection() throws SQLException {
         if (connect != null && !connect.isClosed()) {
             return;
         }

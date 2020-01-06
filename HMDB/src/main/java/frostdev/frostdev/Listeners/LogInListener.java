@@ -1,8 +1,8 @@
 package frostdev.frostdev.Listeners;
 
-import frostdev.frostdev.DBCOMMIT.UserDataCommit;
 import frostdev.frostdev.HMDB;
-import frostdev.frostdev.Util.GetPlayerData;
+import frostdev.frostdev.PlayerDataCommit.PlayerDataCreate;
+import frostdev.frostdev.PlayerDataCommit.PlayerDataGet;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -20,14 +20,14 @@ public class LogInListener implements Listener {
             ignoreCancelled = true
     )
     public void onLogIn(PlayerLoginEvent e) {
-        UserDataCommit user = new UserDataCommit();
+        PlayerDataCreate user = main.playerDataCreate();
         String UUID = e.getPlayer().getUniqueId().toString();
         String name = e.getPlayer().getDisplayName();
         Economy economy = this.main.getEconomy();
         double econ = economy.getBalance(e.getPlayer());
         String Econ = Double.toString(econ);
-        user.UserData(name, UUID, Econ, this.main.GetConnection());
-        GetPlayerData getPlayerData = new GetPlayerData(main, e.getPlayer().getName());
-        main.getLogger().info("Player: " + e.getPlayer().getDisplayName() + " UUID: " + UUID + " Balance: " + getPlayerData.ReturnPlayerBalance());
+        user.CommitPlayer(UUID, name, Econ);
+        PlayerDataGet playerDataGet = new PlayerDataGet(main, e.getPlayer().getName());
+        main.getLogger().info("Player: " + e.getPlayer().getDisplayName() + " UUID: " + UUID + " Balance: " + playerDataGet.ReturnPlayerBalance());
     }
 }

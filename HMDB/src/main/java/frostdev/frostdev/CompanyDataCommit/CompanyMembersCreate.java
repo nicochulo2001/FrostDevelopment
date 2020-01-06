@@ -1,6 +1,6 @@
 package frostdev.frostdev.CompanyDataCommit;
 
-import frostdev.frostdev.DBCOMMIT.TableSetup;
+import frostdev.frostdev.Util.TableSetup;
 import frostdev.frostdev.HMDB;
 
 import java.sql.Connection;

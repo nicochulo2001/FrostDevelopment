@@ -1,12 +1,12 @@
 package frostdev.frostdev;
 
-import com.earth2me.essentials.UserData;
 import frostdev.frostdev.CompanyDataCommit.*;
-import frostdev.frostdev.DBCOMMIT.PlayerEconCommit;
-import frostdev.frostdev.DBCOMMIT.TableSetup;
-import frostdev.frostdev.DBCOMMIT.UserDataCommit;
+import frostdev.frostdev.Util.TableSetup;
 import frostdev.frostdev.DBConnect.MySQLConnect;
 import frostdev.frostdev.Listeners.LogInListener;
+import frostdev.frostdev.PlayerDataCommit.PlayerDataCommit;
+import frostdev.frostdev.PlayerDataCommit.PlayerDataCreate;
+import frostdev.frostdev.PlayerDataCommit.PlayerDataGet;
 import frostdev.frostdev.Util.*;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
@@ -18,23 +18,25 @@ import org.bukkit.plugin.java.JavaPlugin;
 import frostdev.frostdev.Listeners.EconListener;
 import java.io.File;
 import java.sql.Connection;
+import java.sql.SQLException;
 
 public final class HMDB extends JavaPlugin {
-    private MySQLConnect connect = new MySQLConnect();
     private FileConfiguration config = this.getConfig();
+    private MySQLConnect connect;
     private Economy econ;
     private CompanyCreate companyCreate;
     private CompanyDataCommit companyDataCommit;
     private CompanyDataGet companyDataGet;
     private CompanyMembersCreate companyMembersCreate;
-    private PlayerEconCommit playerEconCommit;
     private TableSetup tableSetup;
-    private UserDataCommit userDataCommit;
     private GetItemData getItemData;
-    private GetPlayerData getPlayerData;
+    private PlayerDataGet playerDataGet;
     private TableExists tableExists;
     private CompanyMembersCommit companyMembersCommit;
-
+    private CompanyExists companyExists;
+    private PlayerDataCommit playerDataCommit;
+    private PlayerDataCreate playerDataCreate;
+    private GetConfigData getConfigData;
 
     @Override
     public void onEnable() {
@@ -44,24 +46,42 @@ public final class HMDB extends JavaPlugin {
             Bukkit.getPluginManager().disablePlugin(this);
             return;
         }
-        connect.OnConnect(this);
-        this.companyCreate = new CompanyCreate();
-        this.companyDataGet = new CompanyDataGet();
-        this.playerEconCommit = new PlayerEconCommit();
+        getLogger().info("Successfully hooked into Vault.");
+        getLogger().info("Successfully hooked into Essentials.");
+        getLogger().info("Loading config...");
+        this.getConfigData = new GetConfigData(this);
+        this.connect = new MySQLConnect(this);
+        try {
+            this.connect.openConnection();
+        }catch (SQLException e){
+            this.getLogger().info("Failed to open connection to database, check and make sure your config is set up correctly and your database is online. this is a fatal error.");
+            Bukkit.getPluginManager().disablePlugin(this);
+        }
+        getLogger().info("Successfully hooked into MySQL Database, initializing...");
         this.tableSetup = new TableSetup();
-        this.userDataCommit = new UserDataCommit();
+        getLogger().info("TableSetup instance initialized.");
+        this.companyCreate = new CompanyCreate();
+        this.companyDataGet = new CompanyDataGet(this.GetConnection());
         this.companyMembersCreate = new CompanyMembersCreate();
         this.companyMembersCommit = new CompanyMembersCommit();
+        this.companyExists = new CompanyExists(this, this.GetConnection());
+        getLogger().info("Company instances initialized.");
+        this.playerDataCommit = new PlayerDataCommit(this);
+        this.playerDataCreate = new PlayerDataCreate(this, this.GetConnection());
+        getLogger().info("PlayerData instances initialized.");
        // GetItems items = new GetItems();
        // items.Populate(this);
         ItemStack test = new ItemStack(Material.IRON_HELMET);
         GetItemData getItemData = new GetItemData(this, test.getType().toString());
         String result = getItemData.ReturnItemValue();
         getLogger().info(result);
+        getLogger().info("ItemStack instances initialized.");
         this.getCommand("HMDB").setExecutor(new CommandHMDB(this));
+        getLogger().info("Commands instance initialized.");
         this.getServer().getPluginManager().registerEvents(new LogInListener(this), this);
         this.getServer().getPluginManager().registerEvents(new EconListener(this), this);
-
+        getLogger().info("Listeners initialized.");
+        getLogger().info("HMDB Fully Operational.");
         // Plugin startup logic
     }
     private void Config() {
@@ -99,6 +119,10 @@ public final class HMDB extends JavaPlugin {
         return econ != null;
     }
 
+    public GetConfigData getConfigData(){
+        return this.getConfigData;
+    }
+
     public Economy getEconomy() {
        return econ;
     }
@@ -130,13 +154,25 @@ public final class HMDB extends JavaPlugin {
         return this.companyDataGet;
     }
 
-    public GetPlayerData getPlayerData(String player){
-       return this.getPlayerData = new GetPlayerData(this, player);
+    public PlayerDataGet getPlayerData(String player){
+       return this.playerDataGet = new PlayerDataGet(this, player);
+    }
+
+    public PlayerDataCommit playerDataCommit(){
+        return this.playerDataCommit;
+    }
+
+    public PlayerDataCreate playerDataCreate(){
+        return this.playerDataCreate;
     }
 
     public TableExists tableExists(){
         return this.tableExists = new TableExists();
 
+    }
+
+    public CompanyExists getCompanyExists(){
+        return this.companyExists;
     }
 
     public GetItemData getItemData(String item){

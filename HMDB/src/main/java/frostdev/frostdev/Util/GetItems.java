@@ -1,7 +1,6 @@
 package frostdev.frostdev.Util;
 
 
-import frostdev.frostdev.DBCOMMIT.TableSetup;
 import frostdev.frostdev.HMDB;
 import org.bukkit.Bukkit;
 import org.bukkit.inventory.ItemStack;

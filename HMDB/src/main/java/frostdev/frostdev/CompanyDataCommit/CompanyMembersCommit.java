@@ -1,33 +1,28 @@
 package frostdev.frostdev.CompanyDataCommit;
-
 import frostdev.frostdev.HMDB;
-import frostdev.frostdev.Util.GetPlayerData;
-
+import frostdev.frostdev.PlayerDataCommit.PlayerDataGet;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class CompanyMembersCommit {
     private String UUID;
-    private String econ;
     private Connection connection;
-    private ResultSet result;
-    private String datatype;
+    private String player;
     private String datacontent;
-    public CompanyMembersCommit CommitInstance(String UUID, String datacontent, String datatype, Connection connection){
+    public CompanyMembersCommit CommitInstance(String UUID, String datacontent, String player, Connection connection){
         this.UUID = UUID;
         this.datacontent = datacontent;
-        this.datatype = datatype;
+        this.player = player;
         this.connection = connection;
-        this.Commit();
+        this.MemberCommit();
         return this;
     }
 
-    private void Commit(){
+    private void MemberCommit(){
         String sql;
                 try {
-                    sql = "INSERT INTO "+ this.UUID + "("+ this.datatype + ") VALUES ('"+ this.datacontent + "' );";
+                    sql = "INSERT INTO "+ this.UUID + "("+ this.player + ") VALUES ('"+ this.datacontent + "' );";
                     PreparedStatement stm = connection.prepareStatement(sql);
                     stm.executeUpdate();
                 } catch (SQLException e){
@@ -48,7 +43,7 @@ public class CompanyMembersCommit {
     }
 
     public void UUIDCommit(String PlayerName, HMDB as){
-        GetPlayerData pd = as.getPlayerData(PlayerName);
+        PlayerDataGet pd = as.getPlayerData(PlayerName);
         String sql;
         String PUUID = pd.ReturnPlayerUUID();
         try {

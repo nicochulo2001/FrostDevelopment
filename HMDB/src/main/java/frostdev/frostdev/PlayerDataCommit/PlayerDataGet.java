@@ -1,4 +1,4 @@
-package frostdev.frostdev.Util;
+package frostdev.frostdev.PlayerDataCommit;
 
 import frostdev.frostdev.HMDB;
 import org.bukkit.entity.Player;
@@ -8,7 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class GetPlayerData {
+public class PlayerDataGet {
     private String result;
     private HMDB main;
     private String pname;
@@ -16,7 +16,7 @@ public class GetPlayerData {
     private ResultSet results;
     private String sql;
     private boolean valid = true;
-    public GetPlayerData(HMDB as, String player) {
+    public PlayerDataGet(HMDB as, String player) {
         this.main = as;
         Connection connection;
         connection = as.GetConnection();

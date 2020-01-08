@@ -1,17 +1,12 @@
 package frostdev.frostdev.Util;
-
-import frostdev.frostdev.HMDB;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class CompanyExists {
-    private HMDB main;
     private Connection connection;
-    public CompanyExists(HMDB as, Connection connection){
-        this.main = as;
+    public CompanyExists(Connection connection){
         this.connection = connection;
     }
 

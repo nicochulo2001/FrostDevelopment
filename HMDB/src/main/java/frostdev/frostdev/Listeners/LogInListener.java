@@ -1,8 +1,7 @@
 package frostdev.frostdev.Listeners;
-
 import frostdev.frostdev.HMDB;
 import frostdev.frostdev.PlayerDataCommit.PlayerDataCreate;
-import frostdev.frostdev.PlayerDataCommit.PlayerDataGet;
+import frostdev.frostdev.PlayerWallet.PlayerWalletCreate;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -27,7 +26,5 @@ public class LogInListener implements Listener {
         double econ = economy.getBalance(e.getPlayer());
         String Econ = Double.toString(econ);
         user.CommitPlayer(UUID, name, Econ);
-        PlayerDataGet playerDataGet = new PlayerDataGet(main, e.getPlayer().getName());
-        main.getLogger().info("Player: " + e.getPlayer().getDisplayName() + " UUID: " + UUID + " Balance: " + playerDataGet.ReturnPlayerBalance());
     }
 }

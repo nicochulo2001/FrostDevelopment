@@ -4,7 +4,8 @@ main: frostdev.companies.Companies
 api-version: 1.13
 authors: [MagnusFrost]
 description: Compandies Plugin Developed for the HelloMiners Minecraft Server
-
+load: POSTWORLD
+depend: [HMDB]
 commands:
   companies:
     description: Main command.

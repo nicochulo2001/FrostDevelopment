@@ -6,23 +6,17 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class CompanyMembersCommit {
-    private String UUID;
+    private HMDB main;
     private Connection connection;
-    private String player;
-    private String datacontent;
-    public CompanyMembersCommit CommitInstance(String UUID, String datacontent, String player, Connection connection){
-        this.UUID = UUID;
-        this.datacontent = datacontent;
-        this.player = player;
+    public CompanyMembersCommit(HMDB as, Connection connection){
+        this.main = as;
         this.connection = connection;
-        this.MemberCommit();
-        return this;
     }
 
-    private void MemberCommit(){
+    public void MemberCommit(String player, String CUUID){
         String sql;
                 try {
-                    sql = "INSERT INTO "+ this.UUID + "("+ this.player + ") VALUES ('"+ this.datacontent + "' );";
+                    sql = "INSERT INTO "+ CUUID + "(members) VALUES ('"+ player + "' );";
                     PreparedStatement stm = connection.prepareStatement(sql);
                     stm.executeUpdate();
                 } catch (SQLException e){
@@ -31,10 +25,10 @@ public class CompanyMembersCommit {
 
     }
 
-    public void TitleCommit(String title) {
+    public void TitleCommit(String PUUID, String CUUID, String title) {
         String sql;
         try {
-            sql = "UPDATE " + this.UUID + " SET title ='" + title + "'" + "WHERE members = '"+ this.datacontent + "';";
+            sql = "UPDATE " + CUUID + " SET title ='" + title + "'" + "WHERE UUID = '"+ PUUID + "';";
             PreparedStatement stm = connection.prepareStatement(sql);
             stm.executeUpdate();
         } catch (SQLException e){
@@ -42,12 +36,12 @@ public class CompanyMembersCommit {
         }
     }
 
-    public void UUIDCommit(String PlayerName, HMDB as){
-        PlayerDataGet pd = as.getPlayerData(PlayerName);
+    public void UUIDCommit(String PlayerName, String CUUID){
+        PlayerDataGet pd = this.main.getPlayerData();
         String sql;
-        String PUUID = pd.ReturnPlayerUUID();
+        String PUUID = pd.ReturnPlayerUUID(PlayerName);
         try {
-            sql = "UPDATE " + this.UUID + " SET UUID ='" + PUUID + "'" + "WHERE members = '"+ this.datacontent + "';";
+            sql = "UPDATE " + CUUID + " SET UUID ='" + PUUID + "'" + "WHERE members = '"+ PlayerName + "';";
             PreparedStatement stm = connection.prepareStatement(sql);
             stm.executeUpdate();
         } catch (SQLException e){

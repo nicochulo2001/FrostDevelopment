@@ -9,7 +9,7 @@
     <version>ALPHA-0.1</version>
     <packaging>jar</packaging>
 
-    <name>HelloMinersDB</name>
+    <name>HMDB</name>
 
     <properties>
         <java.version>1.8</java.version>

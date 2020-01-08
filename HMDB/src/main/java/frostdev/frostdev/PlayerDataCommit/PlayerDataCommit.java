@@ -9,13 +9,11 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class PlayerDataCommit {
-    private HMDB main;
     private Connection connection;
 
 
-    public PlayerDataCommit(HMDB as){
-        this.main = as;
-        this.connection = this.main.GetConnection();
+    public PlayerDataCommit(Connection connection){
+        this.connection = connection;
     }
 
     public String PlayerNameChange(String UUID, String name){
@@ -55,7 +53,7 @@ public class PlayerDataCommit {
     }
 
     public boolean PlayerCompanyJoin(String UUID, String company) {
-        CompanyExists comp = main.getCompanyExists();
+        CompanyExists comp = new CompanyExists(connection);
         if(comp.QueryCompanyName(company)) {
             String sql;
             try {

@@ -1,10 +1,8 @@
 package frostdev.companies;
 
 import frostdev.companies.DBHandler.CompaniesCreateCompany;
-import frostdev.frostdev.CompanyDataCommit.CompanyCreate;
 import frostdev.frostdev.HMDB;
 import frostdev.frostdev.PlayerDataCommit.PlayerDataGet;
-import frostdev.frostdev.Util.GetItems;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -25,50 +23,12 @@ public class Command implements CommandExecutor {
     }
     public boolean onCommand(CommandSender sender, org.bukkit.command.Command cmd, String label, String[] args) {
         if(args.length >= 1) {
-            if (args[0].equals("bal")) {
-                if (args[1].isEmpty()) {
-                    sender.sendMessage(this.prefix + " No Player name defined.");
-                    return false;
-                } else {
-                    PlayerDataGet getPlayerData = new PlayerDataGet(main, args[1]);
-                    if(getPlayerData.isValidPlayer()) {
-                        sender.sendMessage(this.prefix + " Player " + args[1] + " has a balance of $" + getPlayerData.ReturnPlayerBalance());
-                        return true;
-                    }else{
-                        sender.sendMessage("Player not found!");
-                    }
-                }
-            } if (args[0].equals("company")) {
-                PlayerDataGet getPlayerData = new PlayerDataGet(main, args[1]);
-                if (getPlayerData.isValidPlayer()) {
-                    sender.sendMessage(this.prefix + " Player " + args[1] + " is a member of " + getPlayerData.ReturnPlayerCompany());
-                    return true;
-                } else {
-                    sender.sendMessage("Player not found!");
-                }
-            } if (args[0].equals("uuid")) {
-                if (args[1].isEmpty()) {
-                    sender.sendMessage(this.prefix + " No Player name defined.");
-                    return false;
-                } else {
-                    PlayerDataGet getPlayerData = new PlayerDataGet(main, args[1]);
-                    if (getPlayerData.isValidPlayer()) {
-                        sender.sendMessage(this.prefix + " Player " + args[1] + "'s UUID is  " + getPlayerData.ReturnPlayerUUID());
-                        return true;
-                    } else {
-                        sender.sendMessage("Player not found!");
-                    }
-                }
-            } if (args[0].equals("populate")){
-                GetItems populate = new GetItems();
-                populate.Populate(this.main);
-                sender.sendMessage("Success.");
-            } if (args[0].equals("create")) {
+            if (args[0].equals("create")) {
                 String des = args[4] + " ";
                 CompaniesCreateCompany company = this.comp.CompanyCreateInstance();
-                if(args[4].contains("<")){
-                    for(int c = 5; c<args.length; c++){
-                       des = des.concat(args[c]) + " ";
+                if (args[4].contains("<")) {
+                    for (int c = 5; c < args.length; c++) {
+                        des = des.concat(args[c]) + " ";
                     }
                 }
                 sender.sendMessage(company.Create(sender.getName(), args[1], args[2], args[3], des, this.comp));

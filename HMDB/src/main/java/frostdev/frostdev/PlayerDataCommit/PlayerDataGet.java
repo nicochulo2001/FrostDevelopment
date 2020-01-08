@@ -16,13 +16,18 @@ public class PlayerDataGet {
     private ResultSet results;
     private String sql;
     private boolean valid = true;
-    public PlayerDataGet(HMDB as, String player) {
+    private Player e;
+    private Connection connection;
+    public PlayerDataGet(HMDB as) {
         this.main = as;
-        Connection connection;
-        connection = as.GetConnection();
-        Player e = as.getServer().getPlayer(player);
-        if(!as.getServer().getOnlinePlayers().contains(e)){
-            this.sql = "SELECT UUID, username, econbal, companymember FROM userdata WHERE username='" + player + "';";
+        this.connection = as.GetConnection();
+
+
+    }
+    private void GetPlayerDataName(String name){
+        e = main.getServer().getPlayer(name);
+        if(!main.getServer().getOnlinePlayers().contains(e)){
+            this.sql = "SELECT UUID, username, econbal, companymember FROM userdata WHERE username='" + name + "';";
             try {
                 PreparedStatement stmt = connection.prepareStatement(sql);
                 this.results = stmt.executeQuery(sql);
@@ -30,7 +35,7 @@ public class PlayerDataGet {
                 this.valid = false;
             }
 
-        }else if (as.getServer().getOnlinePlayers().contains(e)) {
+        }else if (this.main.getServer().getOnlinePlayers().contains(e)) {
             this.UUID = e.getUniqueId().toString();
             this.pname = e.getDisplayName();
             this.sql = "SELECT UUID, username, econbal, companymember FROM userdata WHERE UUID='" + UUID + "';";
@@ -46,7 +51,8 @@ public class PlayerDataGet {
         }
     }
 
-    public String ReturnPlayerBalance(){
+    public String ReturnPlayerBalance(String n){
+        this.GetPlayerDataName(n);
         try {
             while (results.next()) {
                 this.result = results.getString("econbal");
@@ -58,7 +64,8 @@ public class PlayerDataGet {
         return this.result;
     }
 
-    public String ReturnPlayerUUID(){
+    public String ReturnPlayerUUID(String n){
+        this.GetPlayerDataName(n);
         try {
             while (results.next()) {
                 this.result = results.getString("UUID");
@@ -69,8 +76,11 @@ public class PlayerDataGet {
         return this.result;
     }
 
-    public String ReturnPlayerName(){
+    public String ReturnPlayerName(String UUID){
+        this.sql = "SELECT UUID, username, econbal, companymember FROM userdata WHERE UUID='" + UUID + "';";
         try {
+            PreparedStatement statement = this.connection.prepareStatement(this.sql);
+            this.results = statement.executeQuery();
             while (results.next()) {
                 this.result = results.getString("username");
             }
@@ -80,7 +90,8 @@ public class PlayerDataGet {
         return this.result;
     }
 
-    public String ReturnPlayerCompany(){
+    public String ReturnPlayerCompany(String n){
+        this.GetPlayerDataName(n);
         try {
             while (results.next()) {
                 this.result = results.getString("companymember");
@@ -91,7 +102,8 @@ public class PlayerDataGet {
         return this.result;
     }
 
-    public Boolean isValidPlayer(){
+    public Boolean isValidPlayer(String n){
+        this.GetPlayerDataName(n);
         return this.valid;
     }
 }

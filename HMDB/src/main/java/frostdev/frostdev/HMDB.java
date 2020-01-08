@@ -1,6 +1,9 @@
 package frostdev.frostdev;
 
 import frostdev.frostdev.CompanyDataCommit.*;
+import frostdev.frostdev.PlayerWallet.PlayerWalletCommit;
+import frostdev.frostdev.PlayerWallet.PlayerWalletCreate;
+import frostdev.frostdev.PlayerWallet.PlayerWalletGet;
 import frostdev.frostdev.Util.TableSetup;
 import frostdev.frostdev.DBConnect.MySQLConnect;
 import frostdev.frostdev.Listeners.LogInListener;
@@ -17,11 +20,12 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 import frostdev.frostdev.Listeners.EconListener;
 import java.io.File;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 
 public final class HMDB extends JavaPlugin {
-    private FileConfiguration config = this.getConfig();
+    private FileConfiguration config;
     private MySQLConnect connect;
     private Economy econ;
     private CompanyCreate companyCreate;
@@ -36,6 +40,9 @@ public final class HMDB extends JavaPlugin {
     private CompanyExists companyExists;
     private PlayerDataCommit playerDataCommit;
     private PlayerDataCreate playerDataCreate;
+    private PlayerWalletCommit playerWalletCommit;
+    private PlayerWalletCreate playerWalletCreate;
+    private PlayerWalletGet playerWalletGet;
     private GetConfigData getConfigData;
 
     @Override
@@ -54,27 +61,35 @@ public final class HMDB extends JavaPlugin {
         try {
             this.connect.openConnection();
         }catch (SQLException e){
-            this.getLogger().info("Failed to open connection to database, check and make sure your config is set up correctly and your database is online. this is a fatal error.");
-            Bukkit.getPluginManager().disablePlugin(this);
+            this.getLogger().info("Ignore SSL Error, we don't need that shit.");
+
         }
         getLogger().info("Successfully hooked into MySQL Database, initializing...");
+        this.tableExists = new TableExists();
         this.tableSetup = new TableSetup();
-        getLogger().info("TableSetup instance initialized.");
+        this.playerDataCreate = new PlayerDataCreate(this.GetConnection());
         this.companyCreate = new CompanyCreate();
-        this.companyDataGet = new CompanyDataGet(this.GetConnection());
         this.companyMembersCreate = new CompanyMembersCreate();
-        this.companyMembersCommit = new CompanyMembersCommit();
-        this.companyExists = new CompanyExists(this, this.GetConnection());
+        this.playerWalletCreate = new PlayerWalletCreate(this, this.GetConnection());
+        getLogger().info("TableSetup instance initialized.");
+        this.playerWalletCommit = new PlayerWalletCommit(this);
+        this.companyDataCommit = new CompanyDataCommit(this.GetConnection());
+        this.companyDataGet = new CompanyDataGet(this.GetConnection());
+        this.playerWalletGet = new PlayerWalletGet();
+        this.companyExists = new CompanyExists(this.GetConnection());
+        this.companyMembersCommit = new CompanyMembersCommit(this, this.GetConnection());
+        getLogger().info("CompanyCreate instance initialized.");
+
+        getLogger().info("CompanyData instance initialized.");
+
+        getLogger().info("CompanyMemberCreate instance initialized.");
+
+        getLogger().info("CompanyMemberCommit instance initialized.");
+
         getLogger().info("Company instances initialized.");
-        this.playerDataCommit = new PlayerDataCommit(this);
-        this.playerDataCreate = new PlayerDataCreate(this, this.GetConnection());
+        this.playerDataCommit = new PlayerDataCommit(this.GetConnection());
+        this.playerDataGet = new PlayerDataGet(this);
         getLogger().info("PlayerData instances initialized.");
-       // GetItems items = new GetItems();
-       // items.Populate(this);
-        ItemStack test = new ItemStack(Material.IRON_HELMET);
-        GetItemData getItemData = new GetItemData(this, test.getType().toString());
-        String result = getItemData.ReturnItemValue();
-        getLogger().info(result);
         getLogger().info("ItemStack instances initialized.");
         this.getCommand("HMDB").setExecutor(new CommandHMDB(this));
         getLogger().info("Commands instance initialized.");
@@ -85,11 +100,12 @@ public final class HMDB extends JavaPlugin {
         // Plugin startup logic
     }
     private void Config() {
-        getConfig().addDefault("database-host", "localhost");
-        getConfig().addDefault("database-DBname", "HMDB");
+        getConfig().addDefault("database-host", "47.22.57.154");
+        getConfig().addDefault("database-DBname", "hmdb");
         getConfig().addDefault("database-port", 3306);
         getConfig().addDefault("database-username", "root");
-        getConfig().addDefault("database-password", "Test123!");
+        getConfig().addDefault("database-password", "EmoBeemo6716!");
+
         try {
             if (!getDataFolder().exists()) {
                 getDataFolder().mkdirs();
@@ -98,6 +114,7 @@ public final class HMDB extends JavaPlugin {
             if (!file.exists()) {
                 getLogger().info("Config not found, spawning a new one.");
                 saveDefaultConfig();
+                file.createNewFile();
             } else {
                 getLogger().info("Config found, initializing database configuration");
             }
@@ -134,28 +151,20 @@ public final class HMDB extends JavaPlugin {
         return this.companyMembersCreate;
     }
 
-    public CompanyMembersCommit companyMembersCommit(String UUID, String datacontent, String datatype){
-        return this.companyMembersCommit.CommitInstance(UUID, datacontent, datatype, this.GetConnection());
-    }
-
-    public void MemberTitleCommit(String title){
-        this.companyMembersCommit.TitleCommit(title);
-    }
-
-    public void MemberUUIDCommit(String Player_name) {
-        this.companyMembersCommit.UUIDCommit(Player_name, this);
+    public CompanyMembersCommit companyMembersCommit(){
+        return this.companyMembersCommit;
     }
 
     public CompanyDataCommit CompanyCommitData(String UUID) {
-        return this.companyDataCommit = new CompanyDataCommit(this, UUID);
+        return this.companyDataCommit;
     }
 
     public CompanyDataGet companyDataGet() {
         return this.companyDataGet;
     }
 
-    public PlayerDataGet getPlayerData(String player){
-       return this.playerDataGet = new PlayerDataGet(this, player);
+    public PlayerDataGet getPlayerData(){
+       return this.playerDataGet;
     }
 
     public PlayerDataCommit playerDataCommit(){
@@ -166,18 +175,25 @@ public final class HMDB extends JavaPlugin {
         return this.playerDataCreate;
     }
 
+    public PlayerWalletCommit playerWalletCommit(){
+        return this.playerWalletCommit;
+    }
+    public PlayerWalletCreate playerWalletCreate(){
+        return this.playerWalletCreate;
+    }
+
     public TableExists tableExists(){
-        return this.tableExists = new TableExists();
+        return this.tableExists;
 
     }
 
     public CompanyExists getCompanyExists(){
-        return this.companyExists;
+        return  this.companyExists;
     }
 
-    public GetItemData getItemData(String item){
-        return this.getItemData = new GetItemData(this, item);
-    }
+  //  public GetItemData getItemData(String item){
+  //      return this.getItemData = new GetItemData(this, item);
+ //   }
 
 
     public Connection GetConnection() {

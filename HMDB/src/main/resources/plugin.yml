@@ -1,9 +1,9 @@
-name: HelloMinersDB
+name: HMDB
 version: ${project.version}
 main: frostdev.frostdev.HMDB
 api-version: 1.13
 author: MagnusFrost
-description: HelloMiners DataBase Manager
+description: HelloMiners Database Manager
 softdepend: [SQL, Vault]
 
 commands:

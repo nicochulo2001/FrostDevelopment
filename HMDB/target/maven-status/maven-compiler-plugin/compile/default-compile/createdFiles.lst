@@ -12,6 +12,7 @@ frostdev\frostdev\CompanyDataCommit\CompanyPermissionsGet.class
 frostdev\frostdev\Util\SetItemValue.class
 frostdev\frostdev\Util\TableSetup.class
 frostdev\frostdev\CompanyDataCommit\CompanyCreate.class
+frostdev\frostdev\PlayerWallet\PlayerWalletCommit.class
 frostdev\frostdev\Util\GetItemData.class
 frostdev\frostdev\CompanyDataCommit\CompanyMembersGet.class
 frostdev\frostdev\CompanyDataCommit\CompanyMembersCommit.class
@@ -19,6 +20,8 @@ frostdev\frostdev\Util\GetConfigData.class
 frostdev\frostdev\PlayerDataCommit\PlayerDataCommit.class
 frostdev\frostdev\Util\CommandHMDB.class
 frostdev\frostdev\CompanyDataCommit\CompanyMembersCreate.class
+frostdev\frostdev\PlayerWallet\PlayerWalletGet.class
 frostdev\frostdev\CompanyDataCommit\CompanyDataGet.class
+frostdev\frostdev\PlayerWallet\PlayerWalletCreate.class
 frostdev\frostdev\Util\GetItems.class
 frostdev\frostdev\Listeners\LogInListener.class

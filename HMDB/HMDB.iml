@@ -60,15 +60,16 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Maven: Essentials:Essentials:provided">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/Dependencies/EssentialsX.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" scope="PROVIDED" name="Maven: net.ess3:EssentialsX:2.16.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: io.papermc:paperlib:1.0.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: net.ess3:NMSProvider:2.16.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: net.ess3:UpdatedMetaProvider:2.16.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: net.ess3:1_8_R1Provider:2.16.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: net.ess3:1_8_R2Provider:2.16.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: net.ess3:LegacyProvider:2.16.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: net.ess3:ReflectionProvider:2.16.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.bukkit:bukkit:1.12.2-R0.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: net.ess3:FlattenedProvider:2.16.1" level="project" />
     <orderEntry type="module-library">
       <library name="Maven: MySQL:MySQL:provided">
         <CLASSES>

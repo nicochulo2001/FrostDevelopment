@@ -22,19 +22,10 @@ public class EconListener implements Listener {
     public void EconomyUpdateEvent(UserBalanceUpdateEvent e){
         PlayerDataCommit commit = main.playerDataCommit();
         PlayerWalletCommit wallet = main.playerWalletCommit();
-        commit.PlayerEconChange(e.getPlayer().getUniqueId().toString(), e.getNewBalance().doubleValue());
-        wallet.PlayerWalletChange(e.getPlayer().getName(), e.getPlayer().getUniqueId().toString(), this.dest, e.getOldBalance().toEngineeringString(), e.getNewBalance().toEngineeringString());
+        String pname = e.getPlayer().getName();
+        String puuid = this.main.getPlayerData().ReturnPlayerUUID(pname);
+        commit.PlayerEconChange(puuid, e.getNewBalance().doubleValue());
+        wallet.PlayerWalletChange(pname, puuid, this.dest, e.getOldBalance().toString(), e.getNewBalance().toString());
     }
-    @EventHandler(
-            priority = EventPriority.HIGHEST,
-            ignoreCancelled = true
-    )
-    public void EconResp(AsyncPlayerChatEvent e){
-        String paymessage = e.getMessage();
-            if(paymessage.startsWith("/pay")){
-                this.dest = paymessage.replace("/pay ", "").replaceAll("\\d","").replaceAll(" ", "");
 
-            }
-
-    }
 }

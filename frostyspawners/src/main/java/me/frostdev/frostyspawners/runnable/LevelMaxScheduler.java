@@ -65,10 +65,9 @@ public class LevelMaxScheduler implements Runnable {
             LevelMaxScheduler.this.spawner.getWorld().spawnParticle(Particle.TOTEM, loc, 25);
             if (LevelMaxScheduler.this.spawner.getShowDelay()) {
                 LevelMaxScheduler.this.showDelay = true;
-                LevelMaxScheduler.this.spawner.getHologram().clearLines();
+
             }
 
-            LevelMaxScheduler.this.spawner.getHologram().appendTextLine(Lang.GUI_UPGRADE_MAXEDOUT.toString());
             Bukkit.getScheduler().scheduleSyncDelayedTask(LevelMaxScheduler.this.main, LevelMaxScheduler.this.new resetHolo(), 100L);
         }
     }
@@ -78,7 +77,6 @@ public class LevelMaxScheduler implements Runnable {
         }
 
         public void run() {
-            LevelMaxScheduler.this.spawner.getHologram().clearLines();
             LevelMaxScheduler.this.spawner.setShowDelay(LevelMaxScheduler.this.showDelay);
         }
     }

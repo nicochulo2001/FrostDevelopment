@@ -101,7 +101,7 @@ public class Config {
         upgradeWithMoney = new ConfigBoolean("money-upgrades", false);
         spawnerpickupitemlore = new ConfigString("pickup-description", "&7click to pick up your spawner.");
         lvlreq = new ConfigString("egg-item.lore2", "Level Required: &6%lvlreq%");
-        limit = new ConfigInteger("limit", 5);
+        limit = new ConfigInteger("limit", 1);
         maxnearbyentities = new ConfigInteger("max-nearby-entities", 10);
         maxradius = new ConfigInteger("spawner-radius", 10);
 

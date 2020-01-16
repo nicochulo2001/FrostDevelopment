@@ -1,5 +1,10 @@
 package me.frostdev.frostyspawners.spawners.menu;
 
+import io.lumine.xikage.mythicmobs.MythicMobs;
+import io.lumine.xikage.mythicmobs.io.MythicConfig;
+import io.lumine.xikage.mythicmobs.mobs.MythicMob;
+import io.lumine.xikage.mythicmobs.mobs.MythicMobStack;
+import io.lumine.xikage.mythicmobs.spawning.spawners.MythicSpawner;
 import me.frostdev.frostyspawners.Frostyspawners;
 import me.frostdev.frostyspawners.spawners.Spawner;
 import me.frostdev.frostyspawners.util.Logger;
@@ -443,7 +448,6 @@ public class Menu {
 
 
 
-
             try {
                 this.egg_item((Inventory)this.menu_type.get(currentPage), currentSlot, eggItem);
             } catch (NullPointerException var9) {
@@ -472,7 +476,6 @@ public class Menu {
             lore.add(ChatColor.translateAlternateColorCodes('&', Config.lvlreq.get().replaceAll("%lvlreq%", Integer.toString(lvlreq))));
             mgolem.setLore(lore);
             golem.setItemMeta(mgolem);
-            ;
             menu.setItem(location, golem);
         }else {
             EntityType etype = egg.getEntityType();

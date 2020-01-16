@@ -104,14 +104,15 @@ public class Frostyspawners extends JavaPlugin {
         }
 
         this.getCommand("frostyspawners").setExecutor(new CommandAdvancedspawners(this));
+        this.getServer().getPluginManager().registerEvents(new SpawnerEggGuard(this), this);
         this.getServer().getPluginManager().registerEvents(new SpawnerBreakListener(this), this);
         this.getServer().getPluginManager().registerEvents(new SpawnerRenameListener(this), this);
         this.getServer().getPluginManager().registerEvents(new SpawnerSpawnListener(this), this);
         this.getServer().getPluginManager().registerEvents(new SpawnerPlaceListener(this), this);
         this.getServer().getPluginManager().registerEvents(new SpawnerInteractListener(this), this);
-        this.getServer().getScheduler().scheduleSyncRepeatingTask(this, new SpawnerPlayEffect(this), 0L, 20L);
         this.getServer().getPluginManager().registerEvents(new SpawnerDeathListener(this), this);
         this.getServer().getPluginManager().registerEvents(new ItemSpawnListener(this), this);
+
         ConfigurationSerialization.registerClass(Spawner.class);
         Logger.info("Setup complete. Enabled " + this.name + "version " + this.versionID + ".");
     }

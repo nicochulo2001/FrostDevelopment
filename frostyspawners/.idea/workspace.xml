@@ -2,232 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8adb9dc8-7ae9-495b-b760-05115b288647" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../HMDB/.idea/libraries/Maven__io_papermc_paperlib_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HMDB/.idea/libraries/Maven__net_ess3_1_8_R1Provider_2_16_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HMDB/.idea/libraries/Maven__net_ess3_1_8_R2Provider_2_16_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HMDB/.idea/libraries/Maven__net_ess3_EssentialsX_2_16_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HMDB/.idea/libraries/Maven__net_ess3_FlattenedProvider_2_16_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HMDB/.idea/libraries/Maven__net_ess3_LegacyProvider_2_16_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HMDB/.idea/libraries/Maven__net_ess3_NMSProvider_2_16_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HMDB/.idea/libraries/Maven__net_ess3_ReflectionProvider_2_16_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HMDB/.idea/libraries/Maven__net_ess3_UpdatedMetaProvider_2_16_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HMDB/.idea/libraries/Maven__org_bukkit_bukkit_1_12_2_R0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HMDB/.idea/libraries/Maven__com_acrobot_chestshop_chestshop_3_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HMDB/.idea/libraries/Maven__fr_minuskube_inv_smart_invs_1_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HMDB/.idea/libraries/Maven__javax_persistence_persistence_api_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HMDB/.idea/libraries/Maven__org_avaje_ebean_2_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HMDB/.idea/libraries/Maven__org_spigotmc_spigot_api_1_8_8_R0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/EconBot/ItemAverageCommit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/EconBot/MassEconDataGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/GUI/CustomPlayerGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/GUI/CustomPlayerPurchaseGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/Listeners/ChestShopListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/Runnable/async.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/Util/CommandPay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerEggGuard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/ForceSpawnDelay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HMCompanies/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HMCompanies/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMDB/.idea/libraries/Maven__com_destroystokyo_paper_paper_api_1_14_4_R0_1_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/.idea/libraries/Maven__com_destroystokyo_paper_paper_api_1_14_4_R0_1_SNAPSHOT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HMDB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HMDB/HMDB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/HMDB.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HMDB/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/CompanyDataCommit/CompanyCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/DBConnect/MySQLConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/DBConnect/MySQLConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/HMDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/HMDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/Listeners/EconListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/Listeners/EconListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/CompanyDataCommit/CompanyCreate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/CompanyDataCommit/CompanyDataCommit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/CompanyDataCommit/CompanyDataGet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/CompanyDataCommit/CompanyMembersCommit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/CompanyDataCommit/CompanyMembersCreate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/CompanyDataCommit/CompanyMembersGet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/CompanyDataCommit/CompanyPermissionsCommit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/CompanyDataCommit/CompanyPermissionsCreate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/CompanyDataCommit/CompanyPermissionsGet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/DBConnect/MySQLConnect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/HMDB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/Listeners/EconListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/Listeners/LogInListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/PlayerDataCommit/PlayerDataCommit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/PlayerDataCommit/PlayerDataCreate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/PlayerDataCommit/PlayerDataGet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/PlayerWallet/PlayerWalletCommit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/PlayerWallet/PlayerWalletCreate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/PlayerWallet/PlayerWalletGet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/Util/CommandHMDB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/Util/CompanyExists.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/Util/GetConfigData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/Util/GetItemData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/Util/GetItems.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/Util/SetItemValue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/Util/TableExists.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/frostdev/frostdev/Util/TableSetup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/Listeners/LogInListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/Listeners/LogInListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/PlayerDataCommit/PlayerDataGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/PlayerDataCommit/PlayerDataGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/PlayerWallet/PlayerWalletCommit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/PlayerWallet/PlayerWalletCommit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/PlayerWallet/PlayerWalletCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/PlayerWallet/PlayerWalletCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/PlayerWallet/PlayerWalletGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/PlayerWallet/PlayerWalletGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/Util/CommandHMDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/src/main/java/frostdev/frostdev/Util/CommandHMDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMDB/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMDB/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/target/classes/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HMDB/target/frostdev-ALPHA-0.1-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/target/frostdev-ALPHA-0.1-shaded.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HMDB/target/frostdev-ALPHA-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/target/frostdev-ALPHA-0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HMDB/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HMDB/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HMDB/target/original-frostdev-ALPHA-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../HMDB/target/original-frostdev-ALPHA-0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/frostyspawners.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_destroystokyo_paper_paper_api_1_14_4_R0_1_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_destroystokyo_paper_paper_api_1_14_4_R0_1_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/libraries/Maven__com_destroystokyo_paper_paper_api_1_14_4_R0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/libraries/Maven__com_google_guava_guava_21_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/libraries/Maven__junit_junit_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/libraries/Maven__net_md_5_bungeecord_chat_1_13_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/libraries/Maven__org_ow2_asm_asm_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/libraries/Maven__org_ow2_asm_asm_analysis_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/libraries/Maven__org_ow2_asm_asm_commons_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/libraries/Maven__org_ow2_asm_asm_tree_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/Dependencies/EssentialsX-2.17.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/Dependencies/EssentialsXAntiBuild-2.17.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/Dependencies/EssentialsXChat-2.17.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/Dependencies/EssentialsXGeoIP-2.17.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/Dependencies/EssentialsXProtect-2.17.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/Dependencies/EssentialsXSpawn-2.17.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/Dependencies/EssentialsXXMPP-2.17.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/Dependencies/HolographicDisplays.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/Dependencies/Vault.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/Dependencies/spigot-1.12.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/Dependencies/spigot-1.14.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/frostyspawners.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/Frostyspawners.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/Lang.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/Permissions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/api/event/SpawnerBreakEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/api/event/SpawnerChangeLevelEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/api/event/SpawnerChangeSettingEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/api/event/SpawnerChangeTypeEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/api/event/SpawnerEggInteractEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/api/event/SpawnerEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/api/event/SpawnerInspectEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/api/event/SpawnerLevelupEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/api/event/SpawnerOpenMenuEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/api/event/SpawnerPlaceEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/api/event/SpawnerSpawnEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/api/event/SpawnerTypeMenuEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/commands/CommandAdvancedspawners.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/exception/InvalidLevelException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/exception/SetLevelFailException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/exception/SetTypeFailException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/listener/ItemSpawnListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/listener/MenuHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/listener/SpawnerBreakListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/listener/SpawnerDeathListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/listener/SpawnerInteractListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/listener/SpawnerMenuGuard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/listener/SpawnerPlaceListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/listener/SpawnerRenameListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/listener/SpawnerSpawnListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/runnable/LevelMaxScheduler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/runnable/SpawnerInspect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/runnable/SpawnerPlayEffect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/runnable/SpawnerShowDelay.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/runnable/SpawnerShowDelayScheduler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/spawners/Spawner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/spawners/SpawnerSaver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/spawners/menu/AdvancedTypeMenuHolder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/spawners/menu/MainMenuHolder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/spawners/menu/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/spawners/menu/SettingsMenuHolder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/spawners/menu/TypeMenuHolder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/Data.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/Logger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/SoundHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/Util.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/config/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/config/ConfigBoolean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/config/ConfigInteger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/config/ConfigLevel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/config/ConfigSetting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/config/ConfigString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/config/ConfigType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/items/Items.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/items/ItemsLegacy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/items/ItemsNew.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/items/SpawnEgg.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/items/SpawnEggCustom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/items/SpawnEggLegacy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/items/SpawnEggNew.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/java/me/frostdev/frostyspawners/util/items/TypeMenuEggItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/resources/config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/src/main/resources/plugin.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/Frostyspawners.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/Lang.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/Permissions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/api/event/SpawnerBreakEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/api/event/SpawnerChangeLevelEvent$Cause.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/api/event/SpawnerChangeLevelEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/api/event/SpawnerChangeSettingEvent$Setting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/api/event/SpawnerChangeSettingEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/api/event/SpawnerChangeTypeEvent$Cause.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/api/event/SpawnerChangeTypeEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/api/event/SpawnerEggInteractEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/api/event/SpawnerEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/api/event/SpawnerInspectEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/api/event/SpawnerLevelupEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/api/event/SpawnerOpenMenuEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/api/event/SpawnerPlaceEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/api/event/SpawnerSpawnEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/api/event/SpawnerTypeMenuEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/commands/CommandAdvancedspawners.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/exception/InvalidLevelException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/exception/SetLevelFailException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/exception/SetTypeFailException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/listener/ItemSpawnListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/listener/MenuHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/listener/SpawnerBreakListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/listener/SpawnerDeathListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/listener/SpawnerInteractListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/listener/SpawnerMenuGuard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/listener/SpawnerPlaceListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/listener/SpawnerRenameListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/listener/SpawnerSpawnListener$schedule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/listener/SpawnerSpawnListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/runnable/LevelMaxScheduler$effect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/runnable/LevelMaxScheduler$resetHolo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/runnable/LevelMaxScheduler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/runnable/SpawnerInspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/runnable/SpawnerPlayEffect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/runnable/SpawnerShowDelay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/runnable/SpawnerShowDelayScheduler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/spawners/Spawner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/spawners/SpawnerSaver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/spawners/menu/AdvancedTypeMenuHolder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/spawners/menu/MainMenuHolder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/spawners/menu/Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/spawners/menu/SettingsMenuHolder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/spawners/menu/TypeMenuHolder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/Data.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/Logger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/SoundHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/config/Config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/config/ConfigBoolean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/config/ConfigInteger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/config/ConfigLevel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/config/ConfigSetting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/config/ConfigString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/config/ConfigType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/items/Items.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/items/ItemsLegacy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/items/ItemsNew.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/items/SpawnEgg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/items/SpawnEggCustom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/items/SpawnEggLegacy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/items/SpawnEggNew.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/me/frostdev/frostyspawners/util/items/TypeMenuEggItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/classes/plugin.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/frostyspawners-1.0-SNAPSHOT-shaded.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/frostyspawners-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frostyspawners/target/original-frostyspawners-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frostyspawners.iml" beforeDir="false" afterPath="$PROJECT_DIR$/frostyspawners.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/Frostyspawners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/Frostyspawners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/commands/CommandAdvancedspawners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/commands/CommandAdvancedspawners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/MenuHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/MenuHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerBreakListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerBreakListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerDeathListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerDeathListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerInteractListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerInteractListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerPlaceListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerPlaceListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerSpawnListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerSpawnListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/LevelMaxScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/LevelMaxScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/SpawnerInspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/SpawnerInspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/SpawnerShowDelay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/SpawnerShowDelay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/SpawnerShowDelayScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/SpawnerShowDelayScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/spawners/Spawner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/spawners/Spawner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/spawners/menu/AdvancedTypeMenuHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/spawners/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/spawners/menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/Frostyspawners.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/Frostyspawners.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/commands/CommandAdvancedspawners.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/commands/CommandAdvancedspawners.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/listener/MenuHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/listener/MenuHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/listener/SpawnerBreakListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/listener/SpawnerBreakListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/listener/SpawnerDeathListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/listener/SpawnerDeathListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/listener/SpawnerInteractListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/listener/SpawnerInteractListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/listener/SpawnerPlaceListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/listener/SpawnerPlaceListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/listener/SpawnerSpawnListener$schedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/listener/SpawnerSpawnListener$schedule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/listener/SpawnerSpawnListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/listener/SpawnerSpawnListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/runnable/LevelMaxScheduler$effect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/runnable/LevelMaxScheduler$effect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/runnable/LevelMaxScheduler$resetHolo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/runnable/LevelMaxScheduler$resetHolo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/runnable/SpawnerInspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/runnable/SpawnerInspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/runnable/SpawnerShowDelay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/runnable/SpawnerShowDelay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/runnable/SpawnerShowDelayScheduler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/runnable/SpawnerShowDelayScheduler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/spawners/Spawner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/spawners/Spawner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/spawners/menu/AdvancedTypeMenuHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/spawners/menu/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/spawners/menu/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/util/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/util/Data.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/util/config/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/frostdev/frostyspawners/util/config/Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/frostyspawners-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/frostyspawners-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-frostyspawners-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-frostyspawners-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -236,21 +91,177 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/Frostyspawners.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerSpawnListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+            <state relative-caret-position="238">
+              <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerDeathListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1071">
+              <caret line="84" column="13" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/spawners/Spawner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="643">
+              <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3738#3739#0" expanded="true" />
+                <element signature="e#3771#3772#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerPlaceListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1070">
+              <caret line="134" selection-start-line="134" selection-end-line="134" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/items/TypeMenuEggItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="e#1412#1413#0" expanded="true" />
+                <element signature="e#1444#1445#0" expanded="true" />
+                <element signature="e#1475#1476#0" expanded="true" />
+                <element signature="e#1507#1508#0" expanded="true" />
+                <element signature="e#1618#1619#0" expanded="true" />
+                <element signature="e#1707#1708#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/Data.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="94" column="19" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
+              <folding>
+                <element signature="e#1119#1120#0" expanded="true" />
+                <element signature="e#1155#1156#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/items/SpawnEggNew.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-136">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="e#471#472#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#819#820#0" expanded="true" />
+                <element signature="e#851#852#0" expanded="true" />
+                <element signature="e#1016#1017#0" expanded="true" />
+                <element signature="e#1065#1066#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/MenuHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="142" column="81" selection-start-line="142" selection-start-column="81" selection-end-line="142" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/spawners/menu/Menu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1702">
+              <caret line="373" column="42" selection-start-line="373" selection-start-column="42" selection-end-line="373" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/Util.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+              <folding>
+                <element signature="e#2810#2811#0" expanded="true" />
+                <element signature="e#2837#2838#0" expanded="true" />
+                <element signature="e#2898#2899#0" expanded="true" />
+                <element signature="e#2952#2953#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>uuid</find>
+      <find>getown</find>
+      <find>bedroc</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/commands/CommandAdvancedspawners.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/spawners/menu/MythicSpawner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerInteractListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerEggGuard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/Frostyspawners.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/config/Config.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/spawners/Spawner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/SpawnerInspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/SpawnerShowDelay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/Data.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/SpawnerShowDelayScheduler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerBreakListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/LevelMaxScheduler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/forcespawn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/ForceSpawnDelay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerPlaceListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/spawners/menu/Menu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/MenuHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerSpawnListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerDeathListener.java" />
+      </list>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -259,9 +270,30 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Frostyspawners" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Frostyspawners" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Frostyspawners" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1713" />
-    <option name="width" value="1734" />
+    <option name="x" value="-7" />
+    <option name="width" value="2068" />
     <option name="height" value="1407" />
   </component>
   <component name="ProjectId" id="1UsCNLLbWZ8IgSJ1p6ec4SLxEkX" />
@@ -272,7 +304,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -311,10 +342,104 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="frostyspawners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frostyspawners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frostyspawners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frostyspawners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="listener" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frostyspawners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="runnable" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frostyspawners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="spawners" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frostyspawners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="spawners" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frostyspawners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frostyspawners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frostyspawners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="frostyspawners" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="items" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -328,6 +453,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.28591257" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
@@ -353,45 +481,47 @@
       <option name="presentableId" value="Default" />
       <updated>1576135874530</updated>
       <workItem from="1576135884585" duration="21742000" />
-      <workItem from="1578544132229" duration="79000" />
+      <workItem from="1578544132229" duration="5474000" />
+      <workItem from="1578612244590" duration="27904000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79000" />
+    <option name="totallyTimeSpent" value="33378000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1713" y="0" width="1734" height="1407" extended-state="0" />
+    <frame x="-7" y="0" width="2068" height="1407" extended-state="0" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24970132" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21663347" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Analyze Dataflow from" weight="0.32969603" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="LuaJ" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.0498008" />
+      <window_info anchor="right" id="LuaJ" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,13 +559,413 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/Frostyspawners.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/commands/CommandAdvancedspawners.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        <state relative-caret-position="561">
+          <caret line="87" column="28" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/items/Items.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/spawners/menu/MythicSpawner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerEggGuard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="96" selection-start-line="22" selection-start-column="96" selection-end-line="22" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/Frostyspawners.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="111" column="100" selection-start-line="111" selection-start-column="100" selection-end-line="111" selection-end-column="100" />
+          <folding>
+            <element signature="e#4885#4886#0" expanded="true" />
+            <element signature="e#4917#4918#0" expanded="true" />
+            <element signature="method#validateConfiguratedLevels#0;class#Frostyspawners#0" />
+            <element signature="method#checkLevels#0;class#Frostyspawners#0" />
+            <element signature="method#loadVault#0;class#Frostyspawners#0" />
+            <element signature="method#loadLang#0;class#Frostyspawners#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/ItemSpawnListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/config/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="103" column="44" selection-start-line="103" selection-start-column="44" selection-end-line="103" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/api/event/SpawnerLevelupEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/api/event/SpawnerChangeLevelEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
+            <element signature="e#953#954#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/spawners/menu/AdvancedTypeMenuHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/api/event/SpawnerEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/spawners/menu/MainMenuHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/SpawnerPlayEffect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/api/event/SpawnerPlaceEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerInteractListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="110" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="108" column="21" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/SpawnerShowDelay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/SpawnerShowDelayScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/LevelMaxScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+          <folding>
+            <element signature="e#3024#3025#0" expanded="true" />
+            <element signature="e#3125#3126#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/forcespawn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/runnable/SpawnerInspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1760#1761#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/ForceSpawnDelay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerBreakListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="104" column="23" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerPlaceListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1070">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/items/TypeMenuEggItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#1412#1413#0" expanded="true" />
+            <element signature="e#1444#1445#0" expanded="true" />
+            <element signature="e#1475#1476#0" expanded="true" />
+            <element signature="e#1507#1508#0" expanded="true" />
+            <element signature="e#1618#1619#0" expanded="true" />
+            <element signature="e#1707#1708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="94" column="19" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
+          <folding>
+            <element signature="e#1119#1120#0" expanded="true" />
+            <element signature="e#1155#1156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/items/SpawnEggNew.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#1016#1017#0" expanded="true" />
+            <element signature="e#1065#1066#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/util/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding>
+            <element signature="e#2810#2811#0" expanded="true" />
+            <element signature="e#2837#2838#0" expanded="true" />
+            <element signature="e#2898#2899#0" expanded="true" />
+            <element signature="e#2952#2953#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/spawners/Spawner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3738#3739#0" expanded="true" />
+            <element signature="e#3771#3772#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerSpawnListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/SpawnerDeathListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="84" column="13" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/spawners/menu/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1702">
+          <caret line="373" column="42" selection-start-line="373" selection-start-column="42" selection-end-line="373" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/frostdev/frostyspawners/listener/MenuHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="142" column="81" selection-start-line="142" selection-start-column="81" selection-end-line="142" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28591257" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Minecraft</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28591257" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28591257" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28591257" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>frostyspawners</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28591257" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.destroystokyo.paper:paper-api:1.14.4-R0.1-SNAPSHOT</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28591257" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

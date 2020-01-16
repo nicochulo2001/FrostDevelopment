@@ -84,7 +84,10 @@ public class CommandAdvancedspawners implements CommandExecutor {
                     sender.sendMessage(this.prefix + Lang.COMMAND_LOAD_SUCCESS.toString());
                     return true;
                 }
-            } else if (args[0].equals("clean")) {
+            }else if(args[0].equals("basegive")){
+                return true;
+            }
+            else if (args[0].equals("clean")) {
                 if (!sender.hasPermission((new Permissions()).command_clean) && !sender.isOp()) {
                     sender.sendMessage(this.noperm);
                     return true;

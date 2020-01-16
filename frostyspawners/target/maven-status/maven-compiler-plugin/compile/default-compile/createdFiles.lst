@@ -14,6 +14,7 @@ me\frostdev\frostyspawners\api\event\SpawnerBreakEvent.class
 me\frostdev\frostyspawners\util\config\ConfigInteger.class
 me\frostdev\frostyspawners\util\config\Config.class
 me\frostdev\frostyspawners\api\event\SpawnerChangeLevelEvent.class
+me\frostdev\frostyspawners\listener\SpawnerEggGuard.class
 me\frostdev\frostyspawners\listener\SpawnerSpawnListener.class
 me\frostdev\frostyspawners\util\Logger.class
 me\frostdev\frostyspawners\util\SoundHandler.class
@@ -35,6 +36,7 @@ me\frostdev\frostyspawners\listener\SpawnerMenuGuard.class
 me\frostdev\frostyspawners\api\event\SpawnerSpawnEvent.class
 me\frostdev\frostyspawners\spawners\menu\SettingsMenuHolder.class
 me\frostdev\frostyspawners\util\items\SpawnEggLegacy.class
+me\frostdev\frostyspawners\util\ForceSpawnDelay.class
 me\frostdev\frostyspawners\util\config\ConfigType.class
 me\frostdev\frostyspawners\spawners\menu\MainMenuHolder.class
 me\frostdev\frostyspawners\api\event\SpawnerLevelupEvent.class
@@ -52,10 +54,10 @@ me\frostdev\frostyspawners\exception\SetTypeFailException.class
 me\frostdev\frostyspawners\runnable\SpawnerShowDelay.class
 me\frostdev\frostyspawners\listener\SpawnerPlaceListener.class
 me\frostdev\frostyspawners\util\items\SpawnEggCustom.class
-me\frostdev\frostyspawners\spawners\menu\AdvancedTypeMenuHolder.class
 me\frostdev\frostyspawners\util\items\ItemsLegacy.class
 me\frostdev\frostyspawners\api\event\SpawnerOpenMenuEvent.class
 me\frostdev\frostyspawners\listener\ItemSpawnListener.class
+me\frostdev\frostyspawners\listener\SpawnerSpawnListener$1.class
 me\frostdev\frostyspawners\exception\SetLevelFailException.class
 me\frostdev\frostyspawners\runnable\SpawnerPlayEffect.class
 me\frostdev\frostyspawners\listener\SpawnerDeathListener.class

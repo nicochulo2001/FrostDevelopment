@@ -22,21 +22,8 @@ public class SpawnerShowDelay implements Runnable {
 
     public void run() {
         Logger.info(String.valueOf(this.spawner.getDelay()));
-        if (this.spawner.getShowDelay() && this.spawner.isValid() && this.spawner.isEnabled()) {
-            if (this.spawner.getHologram().size() > 0) {
-                this.spawner.getHologram().clearLines();
-                this.spawner.getHologram().appendTextLine(String.valueOf(this.spawner.getDelayInSeconds()));
-                this.spawner.getHologram().getVisibilityManager().setVisibleByDefault(true);
-            } else {
-                this.spawner.getHologram().appendTextLine(String.valueOf(this.spawner.getDelayInSeconds()));
-            }
 
-        } else {
-            if (this.spawner.getHologram().size() > 0) {
-                this.spawner.getHologram().clearLines();
-            }
 
-            this.cancel();
-        }
+
     }
 }

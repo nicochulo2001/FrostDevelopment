@@ -4,9 +4,12 @@ main: frostdev.frostdev.HMDB
 api-version: 1.13
 author: MagnusFrost
 description: HelloMiners Database Manager
-softdepend: [SQL, Vault]
+softdepend: [SQL, Vault, GUI-API]
 
 commands:
   HMDB:
     description: Main command.
     aliases: [hmdb]
+  payment:
+    description: Pay replacement command.
+    aliases: [pay]

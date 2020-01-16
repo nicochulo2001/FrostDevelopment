@@ -80,11 +80,32 @@
             <systemPath>${basedir}\Dependencies\Vault.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>HolographicDisplays</groupId>
-            <artifactId>HolographicDisplays</artifactId>
-            <version>2.4.1-SNAPSHOT</version>
+            <groupId>MythicMobs</groupId>
+            <artifactId>MythicMobs</artifactId>
+            <version>provided</version>
             <scope>system</scope>
-            <systemPath>${basedir}\Dependencies\HolographicDisplays.jar</systemPath>
+            <systemPath>${basedir}\Dependencies\MythicMobs.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>coreapi</groupId>
+            <artifactId>coreapi</artifactId>
+            <version>provided</version>
+            <scope>system</scope>
+            <systemPath>${basedir}\Dependencies\coreapi.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>DiscordAPI</groupId>
+            <artifactId>DiscordAPI</artifactId>
+            <version>provided</version>
+            <scope>system</scope>
+            <systemPath>${basedir}\Dependencies\DiscordAPI.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>SpigotLib</groupId>
+            <artifactId>SpigotLib</artifactId>
+            <version>provided</version>
+            <scope>system</scope>
+            <systemPath>${basedir}\Dependencies\SpigotLib.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>spigot-1.12.2</groupId>

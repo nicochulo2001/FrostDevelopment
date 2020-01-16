@@ -92,7 +92,6 @@ public class Data {
         } else if (this.spawners.get(spawner.getID()) == spawner) {
             return 1;
         } else {
-            spawner.getHologram().delete();
             this.spawners.remove(spawner.getID());
             this.set("spawners." + spawner.getID(), (Object)null);
             return 2;

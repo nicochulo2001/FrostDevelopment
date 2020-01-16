@@ -13,6 +13,7 @@ import me.frostdev.frostyspawners.spawners.Spawner;
 import me.frostdev.frostyspawners.spawners.menu.MainMenuHolder;
 import me.frostdev.frostyspawners.spawners.menu.SettingsMenuHolder;
 import me.frostdev.frostyspawners.spawners.menu.TypeMenuHolder;
+import me.frostdev.frostyspawners.util.ForceSpawnDelay;
 import me.frostdev.frostyspawners.util.Logger;
 import me.frostdev.frostyspawners.util.SoundHandler;
 import me.frostdev.frostyspawners.util.Util;
@@ -201,6 +202,9 @@ public class MenuHandler implements Listener {
                                     if (res.transactionSuccess()) {
                                         SpawnerLevelupEvent levelupEvent = new SpawnerLevelupEvent(spawner, spawner.getLevel() + 1, Cause.LEVELUP);
                                         Bukkit.getServer().getPluginManager().callEvent(levelupEvent);
+                                        ForceSpawnDelay forceSpawnDelay = new ForceSpawnDelay();
+                                        forceSpawnDelay.ForceDelay(spawner);
+                                        forceSpawnDelay.ForceSpawnCount(spawner);
                                         if (levelupEvent.isCancelled()) {
                                             return;
                                         }
@@ -246,9 +250,6 @@ public class MenuHandler implements Listener {
                                     SoundHandler.OPTION_UPGRADE.playSound(loc, 1.0F, 2.0F);
                                 }
 
-                                if (spawner.getDelay() > spawner.getDefaultDelay()) {
-                                    spawner.setDelay(spawner.getDefaultDelay());
-                                }
 
                                 p.setLevel(p.getLevel() - (int)level.getCost());
                                 p.sendMessage(this.prefix + Lang.GUI_UPGRADE_SUCCESS.toString().replace("%level%", String.valueOf(spawner.getLevel())));
@@ -265,12 +266,18 @@ public class MenuHandler implements Listener {
                     if (option.getType() == this.main.items.bedrock(1).getType()) {
                         SpawnerBreakEvent breakEvent = new SpawnerBreakEvent(spawner, this.player);
                         ItemStack toin = spawner.toItemStack();
-                        p.getInventory().addItem(toin);
-                        p.updateInventory();
-                        Bukkit.getServer().getPluginManager().callEvent(breakEvent);
-                        spawner.getBlock().setType(Material.AIR);
-                        this.exit();
-                        return;
+                        if(p.getInventory().firstEmpty() != -1) {
+                            p.getInventory().addItem(toin);
+                            p.updateInventory();
+                            Bukkit.getServer().getPluginManager().callEvent(breakEvent);
+                            spawner.getBlock().setType(Material.AIR);
+                            this.exit();
+                            return;
+                        }else{
+                            p.sendMessage("Your Inventory is full!");
+                            return;
+
+                        }
                     }
 
                     if (option.getType() == this.main.items.wool(1, DyeColor.LIME).getType() || option.getType() == this.main.items.wool(1, DyeColor.RED).getType()) {
@@ -374,6 +381,13 @@ public class MenuHandler implements Listener {
                             this.exit();
                             return;
                         }
+                        if (type == EntityType.WITHER_SKELETON || type == EntityType.BLAZE || type == EntityType.PIG_ZOMBIE || type == EntityType.MAGMA_CUBE){
+                            if(!spawner.getWorld().getEnvironment().equals(World.Environment.NETHER)){
+                                p.sendMessage("Nether Mobs are only allowed in the nether.");
+                                this.exit();
+                                return;
+                            }
+                        }
 
                         ConfigType level = new ConfigType();
                         int levelreq = level.getLevelReq(type);
@@ -401,10 +415,6 @@ public class MenuHandler implements Listener {
 
                         try {
                             spawner.setSpawnedType(type);
-                           // String debug;
-                           // debug = type.toString().toLowerCase();
-                          //  p.sendMessage("FROSTY DEBUGGER: TYPE: " + debug + " COST: " + name.getTypeCost(type).toString() + " LEVEL REQUIREMENT: " + levelreq);
-                          //  p.sendMessage("CURRENT SPAWNER: TYPE: " + spawner.getSpawnedType().toString() + " LEVEL: " + spawner.getLevel() + " ENABLED: " + spawner.isEnabled() + " LOCKED: " + spawner.isLocked());
                         } catch (IllegalArgumentException var10) {
                             p.sendMessage(this.prefix + Lang.SPAWNER_CHANGE_TYPE_FAIL.toString());
                             Logger.debug("Failed to change spawned type of spawner '" + spawner.getID() + "'. Reason: unknown or unregistered entity type.", var10);
@@ -415,10 +425,6 @@ public class MenuHandler implements Listener {
                         if(!spawner.getSpawnedType().equals(type)){
                             try {
                                 spawner.setSpawnedType(type);
-                                //String debug;
-                                //debug = type.toString().toLowerCase();
-                                //  p.sendMessage("FROSTY DEBUGGER: TYPE: " + debug + " COST: " + name.getTypeCost(type).toString() + " LEVEL REQUIREMENT: " + levelreq);
-                                //  p.sendMessage("CURRENT SPAWNER: TYPE: " + spawner.getSpawnedType().toString() + " LEVEL: " + spawner.getLevel() + " ENABLED: " + spawner.isEnabled() + " LOCKED: " + spawner.isLocked());
                             } catch (IllegalArgumentException var10) {
                                 p.sendMessage(this.prefix + Lang.SPAWNER_CHANGE_TYPE_FAIL.toString());
                                 Logger.debug("Failed to change spawned type of spawner '" + spawner.getID() + "'. Reason: unknown or unregistered entity type.", var10);

@@ -103,7 +103,18 @@ public class PlayerDataGet {
     }
 
     public Boolean isValidPlayer(String n){
-        this.GetPlayerDataName(n);
-        return this.valid;
+        this.sql = "SELECT username FROM userdata WHERE username='" + n + "';";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(sql);
+            this.results = stmt.executeQuery(sql);
+            if(this.results.next()){
+                return true;
+            }else{
+                return false;
+            }
+        }catch (SQLException x){
+            return false;
+        }
+
     }
 }

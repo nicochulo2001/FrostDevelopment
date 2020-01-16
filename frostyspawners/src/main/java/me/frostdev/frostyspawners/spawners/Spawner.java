@@ -1,7 +1,5 @@
 package me.frostdev.frostyspawners.spawners;
 
-import com.gmail.filoghost.holographicdisplays.api.Hologram;
-import com.gmail.filoghost.holographicdisplays.api.HologramsAPI;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -42,7 +40,6 @@ public class Spawner implements ConfigurationSerializable {
     private boolean enabled;
     private boolean locked;
     private boolean showDelay;
-    private Hologram holo;
     private Map<UUID, SpawnerInspect> inspect;
 
     static {
@@ -62,19 +59,6 @@ public class Spawner implements ConfigurationSerializable {
             this.enabled = true;
             this.locked = false;
             this.showDelay = false;
-            Location loc = new Location(this.spawner.getWorld(), (double)this.spawner.getBlock().getX() + 0.5D, (double)this.spawner.getBlock().getY() + 1.5D, (double)this.spawner.getBlock().getZ() + 0.5D);
-
-            try {
-                this.holo = HologramsAPI.createHologram(main, loc);
-            } catch (NoClassDefFoundError var5) {
-                return;
-            }
-
-            try {
-                this.holo = HologramsAPI.createHologram(main, loc);
-            } catch (NoClassDefFoundError var4) {
-                return;
-            }
 
             this.inspect = new HashMap();
         }
@@ -92,13 +76,7 @@ public class Spawner implements ConfigurationSerializable {
             throw new IllegalArgumentException("Spawner with '" + id + "' is no spawner anymore.");
         } else {
             this.spawner = (CreatureSpawner)this.block.getState();
-            Location loc = new Location(this.spawner.getWorld(), (double)this.spawner.getBlock().getX() + 0.5D, (double)this.spawner.getBlock().getY() + 1.5D, (double)this.spawner.getBlock().getZ() + 0.5D);
 
-            try {
-                this.holo = HologramsAPI.createHologram(main, loc);
-            } catch (NoClassDefFoundError var9) {
-                return;
-            }
 
             this.inspect = new HashMap();
         }
@@ -115,11 +93,6 @@ public class Spawner implements ConfigurationSerializable {
         this.spawner = (CreatureSpawner)this.block.getState();
         Location loc = new Location(this.spawner.getWorld(), (double)this.spawner.getBlock().getX() + 0.5D, (double)this.spawner.getBlock().getY() + 1.5D, (double)this.spawner.getBlock().getZ() + 0.5D);
 
-        try {
-            this.holo = HologramsAPI.createHologram(main, loc);
-        } catch (NoClassDefFoundError var4) {
-            return;
-        }
 
         this.inspect = new HashMap();
     }
@@ -304,9 +277,6 @@ public class Spawner implements ConfigurationSerializable {
         this.update();
     }
 
-    public Hologram getHologram() {
-        return this.holo;
-    }
 
     public void toggleInspect(Player player) {
         SpawnerInspect inspectRunnable;

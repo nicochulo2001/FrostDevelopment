@@ -42,7 +42,13 @@ public class SpawnerInteractListener implements Listener {
             ignoreCancelled = true
     )
     public void onSpawnerInteract(PlayerInteractEvent e) {
-        if (e.getAction() == Action.LEFT_CLICK_BLOCK && this.main.hasHolographicDisplays() && e.getClickedBlock().getType() == this.main.items.spawner(1).getType() && e.getPlayer().hasPermission((new Permissions()).spawner_inspect) && e.getPlayer().getInventory().getItemInMainHand().getType() == Material.AIR && !e.getPlayer().isOp()) {
+        if (e.getAction() == Action.LEFT_CLICK_BLOCK && this.main.hasHolographicDisplays() && e.getClickedBlock().getType() == this.main.items.spawner(1).getType() && e.getPlayer().hasPermission((new Permissions()).spawner_inspect) && e.getPlayer().getInventory().getItemInMainHand().getType().toString().contains("SPAWN") && !e.getPlayer().isOp()){
+            e.getPlayer().sendMessage("Nice Try.");
+            e.setCancelled(true);
+            return;
+
+        }
+        if (main.getData().getSpawner(e.getClickedBlock()) != null && e.getAction() == Action.LEFT_CLICK_BLOCK && this.main.hasHolographicDisplays() && e.getClickedBlock().getType() == this.main.items.spawner(1).getType() && e.getPlayer().hasPermission((new Permissions()).spawner_inspect) && e.getPlayer().getInventory().getItemInMainHand().getType() == Material.AIR && !e.getPlayer().isOp()) {
             Spawner spawner = this.main.getData().getSpawner(e.getClickedBlock());
             SpawnerInspectEvent inspectEvent = new SpawnerInspectEvent(spawner, e.getPlayer());
             Bukkit.getServer().getPluginManager().callEvent(inspectEvent);
@@ -57,7 +63,18 @@ public class SpawnerInteractListener implements Listener {
                 Block b = e.getClickedBlock();
                 SpawnerOpenMenuEvent event;
                 MenuHandler handler;
+                if(e.getClickedBlock().getType() == main.items.spawner(1).getType()) {
+                    if (main.getData().getSpawner(b.getLocation()) == null) {
+                        p.sendMessage("This Spawner has no owner, mine it with silk touch to make it yours!");
+                        e.setCancelled(true);
+                        return;
+                    }
+                }
                 Spawner spawner = this.main.getData().getSpawner(b);
+                if(!spawner.hasOwner() && e.getAction() == Action.RIGHT_CLICK_BLOCK){
+                    e.setCancelled(true);
+                    return;
+                }
                 if(!spawner.getOwner().getUniqueId().equals(p.getUniqueId()) && !p.isOp()){
                     p.sendMessage("You do not have permission to access this spawner.");
                     e.setCancelled(true);

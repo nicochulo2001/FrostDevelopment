@@ -1,4 +1,5 @@
 package frostdev.frostdev.Listeners;
+import com.earth2me.essentials.commands.Commandpay;
 import frostdev.frostdev.HMDB;
 import frostdev.frostdev.PlayerDataCommit.PlayerDataCommit;
 import frostdev.frostdev.PlayerWallet.PlayerWalletCommit;
@@ -7,6 +8,9 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
+import org.bukkit.scheduler.BukkitRunnable;
+
+import java.math.BigDecimal;
 
 public class EconListener implements Listener {
     private HMDB main;
@@ -20,12 +24,20 @@ public class EconListener implements Listener {
             ignoreCancelled = true
     )
     public void EconomyUpdateEvent(UserBalanceUpdateEvent e){
-        PlayerDataCommit commit = main.playerDataCommit();
-        PlayerWalletCommit wallet = main.playerWalletCommit();
-        String pname = e.getPlayer().getName();
-        String puuid = this.main.getPlayerData().ReturnPlayerUUID(pname);
-        commit.PlayerEconChange(puuid, e.getNewBalance().doubleValue());
-        wallet.PlayerWalletChange(pname, puuid, this.dest, e.getOldBalance().toString(), e.getNewBalance().toString());
+        new BukkitRunnable() {
+
+            @Override
+                    public void run() {
+                    PlayerDataCommit commit = main.playerDataCommit();
+                    PlayerWalletCommit wallet = main.playerWalletCommit();
+                    String puuid = e.getPlayer().getUniqueId().toString();
+                    double oldbal = e.getOldBalance().doubleValue();
+                    double newbal = e.getNewBalance().doubleValue();
+                    double amount = newbal - oldbal;
+                    commit.PlayerEconChange(puuid, newbal);
+                    wallet.WalletCommit(puuid, String.valueOf(oldbal), String.valueOf(newbal), String.valueOf(amount));
+            }
+        }.runTaskAsynchronously(main);
     }
 
 }

@@ -11,6 +11,8 @@ import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.bukkit.block.CreatureSpawner;
+import org.bukkit.craftbukkit.v1_14_R1.block.CraftCreatureSpawner;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -37,17 +39,35 @@ public class SpawnerBreakListener implements Listener {
         Player p = e.getPlayer();
         Block b = e.getBlock();
         Spawner spawner = this.main.getData().getSpawner(b);
-
         if (Config.silkTouchMine.get()) {
+            if(b.getType() == Material.SPAWNER){
+                    if(!spawner.hasOwner()){
+                        CreatureSpawner creatureSpawner = new CraftCreatureSpawner(b);
+                        e.setExpToDrop(0);
+                        b.getDrops().clear();
+                        ItemStack itemStack = new ItemStack(b.getType());
+                        ItemMeta newmeta = itemStack.getItemMeta();
+                        newmeta.setDisplayName(ChatColor.GOLD + creatureSpawner.getSpawnedType().toString() + ChatColor.RESET + " Spawner");
+                        List<String> lore = new ArrayList();
+                        lore.add(ChatColor.GOLD + "Level: " + ChatColor.RESET + 0);
+                        newmeta.setLore(lore);
+                        itemStack.setItemMeta(newmeta);
+                        e.getBlock().getWorld().dropItem(e.getBlock().getLocation(), itemStack);
+                        return;
+                    }
+            }
 
             if (b.getType() == this.main.items.spawner(1).getType()) {
                 ItemStack hand = p.getInventory().getItemInMainHand();
                 if (!this.isPickaxe(hand)) {
                     return;
                 }
-                if(!spawner.getOwner().getUniqueId().equals(p.getUniqueId()) && !p.isOp()){
-                    p.sendMessage("You do not have permission to access this spawner.");
-                    e.setCancelled(true);
+                if(spawner.hasOwner()) {
+                    if (!spawner.getOwner().getUniqueId().equals(p.getUniqueId())) {
+                        p.sendMessage("You do not have permission to access this spawner.");
+                        e.setCancelled(true);
+                        return;
+                    }
                 }
                 if (!hand.getItemMeta().hasEnchant(Enchantment.SILK_TOUCH)) {
                     if (p.isSneaking()) {
@@ -71,11 +91,17 @@ public class SpawnerBreakListener implements Listener {
 
                 SpawnerBreakEvent event = new SpawnerBreakEvent(spawner, p);
                 Bukkit.getServer().getPluginManager().callEvent(event);
+                if(spawner.hasOwner()) {
+                    if (!spawner.getOwner().getUniqueId().equals(p.getUniqueId())) {
+                        p.sendMessage("You do not have permission to access this spawner.");
+                        event.setCancelled(true);
+                        return;
+                    }
+                }
                 if (event.isCancelled()) {
                     return;
                 }
 
-                spawner.getHologram().delete();
                 this.main.getData().removeSpawner(spawner);
                 e.setExpToDrop(0);
                 b.getDrops().clear();
@@ -99,4 +125,5 @@ public class SpawnerBreakListener implements Listener {
     private boolean isPickaxe(ItemStack item) {
         return item.getType() == this.main.items.wood_pickaxe(1).getType() || item.getType() == Material.STONE_PICKAXE || item.getType() == Material.IRON_PICKAXE || item.getType() == this.main.items.gold_pickaxe(1).getType() || item.getType() == Material.DIAMOND_PICKAXE;
     }
+
 }

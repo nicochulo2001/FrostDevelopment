@@ -20,19 +20,6 @@ public class SpawnerShowDelayScheduler implements Runnable {
                 if (spawner.isEnabled() && spawner.getShowDelay()) {
                     spawner.update();
 
-                    try {
-                        if (spawner.getHologram().size() > 0) {
-                            spawner.getHologram().clearLines();
-                            spawner.getHologram().appendTextLine(String.valueOf(spawner.getDelayInSeconds()));
-                        } else {
-                            spawner.getHologram().appendTextLine(String.valueOf(spawner.getDelayInSeconds()));
-                        }
-                    } catch (IllegalArgumentException var4) {
-                        if (var4.getMessage().equals("hologram already deleted")) {
-                        }
-                    }
-                } else if (spawner.getHologram().size() > 0) {
-                    spawner.getHologram().clearLines();
                 }
             }
 

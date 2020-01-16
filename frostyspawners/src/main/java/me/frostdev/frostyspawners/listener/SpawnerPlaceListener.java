@@ -8,6 +8,7 @@ import me.frostdev.frostyspawners.exception.InvalidLevelException;
 import me.frostdev.frostyspawners.exception.SetTypeFailException;
 import me.frostdev.frostyspawners.runnable.LevelMaxScheduler;
 import me.frostdev.frostyspawners.spawners.Spawner;
+import me.frostdev.frostyspawners.util.ForceSpawnDelay;
 import me.frostdev.frostyspawners.util.Logger;
 import me.frostdev.frostyspawners.util.config.Config;
 import net.md_5.bungee.api.ChatColor;
@@ -39,7 +40,6 @@ public class SpawnerPlaceListener implements Listener {
             Player p = e.getPlayer();
             Block b = e.getBlock();
             Spawner spawner = this.main.getData().getSpawner(b);
-            spawner.getHologram().getVisibilityManager().setVisibleByDefault(true);
             ItemStack hand = e.getItemInHand();
             String typeName = "";
 
@@ -53,7 +53,7 @@ public class SpawnerPlaceListener implements Listener {
             c.load();
 
             int check = SpawnerCount(c, Material.SPAWNER);
-            if (check >= Config.limit.get()) {
+            if (check > Config.limit.get()) {
                 e.setCancelled(true);
                 p.sendMessage("Chunk Spawner Limit Reached!");
             }
@@ -66,6 +66,9 @@ public class SpawnerPlaceListener implements Listener {
                     spawner.setSpawnedType(typeName);
                     spawner.getCreatureSpawner().setMaxNearbyEntities(Config.maxnearbyentities.get());
                     spawner.getCreatureSpawner().setSpawnRange(Config.maxradius.get());
+                    ForceSpawnDelay forceSpawnDelay = new ForceSpawnDelay();
+                    forceSpawnDelay.ForceDelay(spawner);
+                    forceSpawnDelay.ForceSpawnCount(spawner);
                 } catch (IllegalArgumentException var17) {
                     Logger.debug("Failed to set entity type for spawner '" + spawner.getID() + "'. Reason: '" + typeName + "' is not a valid entity type. Defaulting entity type to 'PIG'.", var17);
 
@@ -103,6 +106,9 @@ public class SpawnerPlaceListener implements Listener {
                 if (!levelEvent.isCancelled()) {
                     try {
                         spawner.setLevel(level);
+                        ForceSpawnDelay forceSpawnDelay = new ForceSpawnDelay();
+                        forceSpawnDelay.ForceDelay(spawner);
+                        forceSpawnDelay.ForceSpawnCount(spawner);
                     } catch (InvalidLevelException var12) {
                         Logger.error("Failed to set level for spawner '" + spawner.getID() + "'. Reason: '" + level + "' is not a valid level (level can not be lower than 0 or higher than set max level).");
                     } catch (Exception var13) {
@@ -125,5 +131,7 @@ public class SpawnerPlaceListener implements Listener {
         }
         return count;
     }
+
+
 
 }

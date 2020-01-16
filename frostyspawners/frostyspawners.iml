@@ -44,9 +44,36 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: HolographicDisplays:HolographicDisplays:2.4.1-SNAPSHOT">
+      <library name="Maven: MythicMobs:MythicMobs:provided">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/Dependencies/HolographicDisplays.jar!/" />
+          <root url="jar://$MODULE_DIR$/Dependencies/MythicMobs.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Maven: coreapi:coreapi:provided">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/Dependencies/coreapi.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Maven: DiscordAPI:DiscordAPI:provided">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/Dependencies/DiscordAPI.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Maven: SpigotLib:SpigotLib:provided">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/Dependencies/SpigotLib.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

@@ -11,7 +11,6 @@ C:\Users\james\Documents\GitHub\frostyspawners\src\main\java\me\frostdev\frostys
 C:\Users\james\Documents\GitHub\frostyspawners\src\main\java\me\frostdev\frostyspawners\api\event\SpawnerInspectEvent.java
 C:\Users\james\Documents\GitHub\frostyspawners\src\main\java\me\frostdev\frostyspawners\util\items\Items.java
 C:\Users\james\Documents\GitHub\frostyspawners\src\main\java\me\frostdev\frostyspawners\Lang.java
-C:\Users\james\Documents\GitHub\frostyspawners\src\main\java\me\frostdev\frostyspawners\spawners\menu\AdvancedTypeMenuHolder.java
 C:\Users\james\Documents\GitHub\frostyspawners\src\main\java\me\frostdev\frostyspawners\util\items\ItemsNew.java
 C:\Users\james\Documents\GitHub\frostyspawners\src\main\java\me\frostdev\frostyspawners\util\Util.java
 C:\Users\james\Documents\GitHub\frostyspawners\src\main\java\me\frostdev\frostyspawners\util\Logger.java
@@ -35,6 +34,7 @@ C:\Users\james\Documents\GitHub\frostyspawners\src\main\java\me\frostdev\frostys
 C:\Users\james\Documents\GitHub\frostyspawners\src\main\java\me\frostdev\frostyspawners\util\config\ConfigLevel.java
 C:\Users\james\Documents\GitHub\frostyspawners\src\main\java\me\frostdev\frostyspawners\spawners\Spawner.java
 C:\Users\james\Documents\GitHub\frostyspawners\src\main\java\me\frostdev\frostyspawners\exception\InvalidLevelException.java
+C:\Users\james\Documents\GitHub\frostyspawners\src\main\java\me\frostdev\frostyspawners\listener\SpawnerEggGuard.java
 C:\Users\james\Documents\GitHub\frostyspawners\src\main\java\me\frostdev\frostyspawners\listener\SpawnerPlaceListener.java
 C:\Users\james\Documents\GitHub\frostyspawners\src\main\java\me\frostdev\frostyspawners\runnable\SpawnerShowDelayScheduler.java
 C:\Users\james\Documents\GitHub\frostyspawners\src\main\java\me\frostdev\frostyspawners\util\items\SpawnEggCustom.java

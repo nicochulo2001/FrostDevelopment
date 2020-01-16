@@ -62,14 +62,41 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+        <repository>
+            <id>ess-repo</id>
+            <url>https://ci.ender.zone/plugin/repository/everything/</url>
+        </repository>
+        <repository>
+            <id>chestshop-repo</id>
+            <url>https://repo.minebench.de/</url>
+        </repository>
     </repositories>
 
     <dependencies>
+        <dependency>
+            <groupId>fr.minuskube.inv</groupId>
+            <artifactId>smart-invs</artifactId>
+            <version>1.2.7</version>
+        </dependency>
         <dependency>
             <groupId>com.destroystokyo.paper</groupId>
             <artifactId>paper-api</artifactId>
             <version>1.14.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>GUI-API</groupId>
+            <artifactId>GUI-API</artifactId>
+            <version>provided</version>
+            <scope>system</scope>
+            <systemPath>${basedir}\Dependencies\GUI-API.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>CustomGUI</groupId>
+            <artifactId>CustomGUI</artifactId>
+            <version>provided</version>
+            <scope>system</scope>
+            <systemPath>${basedir}\Dependencies\CustomGUI.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
@@ -84,11 +111,66 @@
             <systemPath>${basedir}\Dependencies\Vault.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>Essentials</groupId>
-            <artifactId>Essentials</artifactId>
+            <groupId>MythicMobs</groupId>
+            <artifactId>MythicMobs</artifactId>
             <version>provided</version>
             <scope>system</scope>
-            <systemPath>${basedir}\Dependencies\EssentialsX.jar</systemPath>
+            <systemPath>${basedir}\Dependencies\MythicMobs.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>NPCLib</groupId>
+            <artifactId>NPCLib</artifactId>
+            <version>provided</version>
+            <scope>system</scope>
+            <systemPath>${basedir}\Dependencies\NPCLib.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>PacketAPI</groupId>
+            <artifactId>PacketAPI</artifactId>
+            <version>provided</version>
+            <scope>system</scope>
+            <systemPath>${basedir}\Dependencies\PacketAPI.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>coreapi</groupId>
+            <artifactId>coreapi</artifactId>
+            <version>provided</version>
+            <scope>system</scope>
+            <systemPath>${basedir}\Dependencies\coreapi.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>DiscordAPI</groupId>
+            <artifactId>DiscordAPI</artifactId>
+            <version>provided</version>
+            <scope>system</scope>
+            <systemPath>${basedir}\Dependencies\DiscordAPI.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>SpigotLib</groupId>
+            <artifactId>SpigotLib</artifactId>
+            <version>provided</version>
+            <scope>system</scope>
+            <systemPath>${basedir}\Dependencies\SpigotLib.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>WorldGuardEvents</groupId>
+            <artifactId>WorldGuardEvents</artifactId>
+            <version>provided</version>
+            <scope>system</scope>
+            <systemPath>${basedir}\Dependencies\WorldGuardEvents.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.acrobot.chestshop</groupId>
+            <artifactId>chestshop</artifactId>
+            <version>3.10</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>net.ess3</groupId>
+            <artifactId>EssentialsX</artifactId>
+            <version>2.16.1</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>MySQL</groupId>

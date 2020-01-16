@@ -1,4 +1,5 @@
 package frostdev.frostdev.Listeners;
+import com.earth2me.essentials.commands.Commandpay;
 import frostdev.frostdev.HMDB;
 import frostdev.frostdev.PlayerDataCommit.PlayerDataCommit;
 import frostdev.frostdev.PlayerWallet.PlayerWalletCommit;
@@ -7,6 +8,9 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
+import org.bukkit.scheduler.BukkitRunnable;
+
+import java.math.BigDecimal;
 
 public class EconListener implements Listener {
     private HMDB main;
@@ -20,21 +24,20 @@ public class EconListener implements Listener {
             ignoreCancelled = true
     )
     public void EconomyUpdateEvent(UserBalanceUpdateEvent e){
-        PlayerDataCommit commit = main.playerDataCommit();
-        PlayerWalletCommit wallet = main.playerWalletCommit();
-        commit.PlayerEconChange(e.getPlayer().getUniqueId().toString(), e.getNewBalance().doubleValue());
-        wallet.PlayerWalletChange(e.getPlayer().getName(), e.getPlayer().getUniqueId().toString(), this.dest, e.getOldBalance().toEngineeringString(), e.getNewBalance().toEngineeringString());
-    }
-    @EventHandler(
-            priority = EventPriority.HIGHEST,
-            ignoreCancelled = true
-    )
-    public void EconResp(AsyncPlayerChatEvent e){
-        String paymessage = e.getMessage();
-            if(paymessage.startsWith("/pay")){
-                this.dest = paymessage.replace("/pay ", "").replaceAll("\\d","").replaceAll(" ", "");
+        new BukkitRunnable() {
 
+            @Override
+                    public void run() {
+                    PlayerDataCommit commit = main.playerDataCommit();
+                    PlayerWalletCommit wallet = main.playerWalletCommit();
+                    String puuid = e.getPlayer().getUniqueId().toString();
+                    double oldbal = e.getOldBalance().doubleValue();
+                    double newbal = e.getNewBalance().doubleValue();
+                    double amount = newbal - oldbal;
+                    commit.PlayerEconChange(puuid, newbal);
+                    wallet.WalletCommit(puuid, String.valueOf(oldbal), String.valueOf(newbal), String.valueOf(amount));
             }
-
+        }.runTaskAsynchronously(main);
     }
+
 }

@@ -1,6 +1,13 @@
 package frostdev.frostdev;
 
+import com.Acrobot.Breeze.Utils.MojangAPI.UUIDFetcher;
+import fr.minuskube.inv.SmartInvsPlugin;
 import frostdev.frostdev.CompanyDataCommit.*;
+import frostdev.frostdev.EconBot.ItemAverageCommit;
+import frostdev.frostdev.EconBot.MassEconDataGet;
+import frostdev.frostdev.GUI.CustomPlayerGUI;
+import frostdev.frostdev.GUI.CustomPlayerPurchaseGUI;
+import frostdev.frostdev.Listeners.ChestShopListener;
 import frostdev.frostdev.PlayerWallet.PlayerWalletCommit;
 import frostdev.frostdev.PlayerWallet.PlayerWalletCreate;
 import frostdev.frostdev.PlayerWallet.PlayerWalletGet;
@@ -11,9 +18,14 @@ import frostdev.frostdev.PlayerDataCommit.PlayerDataCommit;
 import frostdev.frostdev.PlayerDataCommit.PlayerDataCreate;
 import frostdev.frostdev.PlayerDataCommit.PlayerDataGet;
 import frostdev.frostdev.Util.*;
+import gyurix.configfile.ConfigFile;
+import io.lumine.xikage.mythicmobs.MythicMobs;
+import me.vagdedes.mysql.database.MySQL;
+import me.vagdedes.mysql.database.SQL;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
+import org.bukkit.OfflinePlayer;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.RegisteredServiceProvider;
@@ -23,10 +35,12 @@ import java.io.File;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.UUID;
+
 
 public final class HMDB extends JavaPlugin {
     private FileConfiguration config;
-    private MySQLConnect connect;
+    private Connection connection;
     private Economy econ;
     private CompanyCreate companyCreate;
     private CompanyDataCommit companyDataCommit;
@@ -44,7 +58,8 @@ public final class HMDB extends JavaPlugin {
     private PlayerWalletCreate playerWalletCreate;
     private PlayerWalletGet playerWalletGet;
     private GetConfigData getConfigData;
-
+    private MassEconDataGet massEconDataGet;
+    private ItemAverageCommit averageCommit;
     @Override
     public void onEnable() {
         Config();
@@ -57,13 +72,8 @@ public final class HMDB extends JavaPlugin {
         getLogger().info("Successfully hooked into Essentials.");
         getLogger().info("Loading config...");
         this.getConfigData = new GetConfigData(this);
-        this.connect = new MySQLConnect(this);
-        try {
-            this.connect.openConnection();
-        }catch (SQLException e){
-            this.getLogger().info("Ignore SSL Error, we don't need that shit.");
-
-        }
+        MySQLConnect connect = new MySQLConnect(this);
+        this.connection = connect.GetConnection();
         getLogger().info("Successfully hooked into MySQL Database, initializing...");
         this.tableExists = new TableExists();
         this.tableSetup = new TableSetup();
@@ -75,7 +85,7 @@ public final class HMDB extends JavaPlugin {
         this.playerWalletCommit = new PlayerWalletCommit(this);
         this.companyDataCommit = new CompanyDataCommit(this.GetConnection());
         this.companyDataGet = new CompanyDataGet(this.GetConnection());
-        this.playerWalletGet = new PlayerWalletGet();
+        this.playerWalletGet = new PlayerWalletGet(this);
         this.companyExists = new CompanyExists(this.GetConnection());
         this.companyMembersCommit = new CompanyMembersCommit(this, this.GetConnection());
         getLogger().info("CompanyCreate instance initialized.");
@@ -88,18 +98,25 @@ public final class HMDB extends JavaPlugin {
 
         getLogger().info("Company instances initialized.");
         this.playerDataCommit = new PlayerDataCommit(this.GetConnection());
+        this.averageCommit = new ItemAverageCommit(this, this.connection);
         this.playerDataGet = new PlayerDataGet(this);
+        this.massEconDataGet = new MassEconDataGet(this, this.GetConnection());
         getLogger().info("PlayerData instances initialized.");
         getLogger().info("ItemStack instances initialized.");
         this.getCommand("HMDB").setExecutor(new CommandHMDB(this));
+        this.getCommand("pay").setExecutor(new CommandPay(this));
         getLogger().info("Commands instance initialized.");
         this.getServer().getPluginManager().registerEvents(new LogInListener(this), this);
         this.getServer().getPluginManager().registerEvents(new EconListener(this), this);
+        this.getServer().getPluginManager().registerEvents(new ChestShopListener(this), this);
+        this.getServer().getPluginManager().registerEvents(new CustomPlayerGUI(this), this);
+        this.getServer().getPluginManager().registerEvents(new CustomPlayerPurchaseGUI(this), this);
         getLogger().info("Listeners initialized.");
         getLogger().info("HMDB Fully Operational.");
         // Plugin startup logic
     }
     private void Config() {
+
         getConfig().addDefault("database-host", "47.22.57.154");
         getConfig().addDefault("database-DBname", "hmdb");
         getConfig().addDefault("database-port", 3306);
@@ -144,6 +161,15 @@ public final class HMDB extends JavaPlugin {
        return econ;
     }
 
+    public double getPlayerBalance(String player){
+       Economy economy = this.getEconomy();
+        try {
+            return  Double.parseDouble(this.getPlayerData().ReturnPlayerBalance(player));
+        }catch (Exception e){
+           return economy.getBalance(Bukkit.getOfflinePlayer(UUID.fromString(this.getPlayerData().ReturnPlayerUUID(player))));
+        }
+    }
+
     public boolean CreateCompany(String user, String UUID, String econ, String stock, String compname, String textcompdata){
         return this.companyCreate.CompanyCreate(user, UUID, econ, stock, compname, textcompdata, this);
     }
@@ -153,6 +179,9 @@ public final class HMDB extends JavaPlugin {
 
     public CompanyMembersCommit companyMembersCommit(){
         return this.companyMembersCommit;
+    }
+    public ItemAverageCommit itemAverageCommit(){
+        return this.averageCommit;
     }
 
     public CompanyDataCommit CompanyCommitData(String UUID) {
@@ -181,9 +210,10 @@ public final class HMDB extends JavaPlugin {
     public PlayerWalletCreate playerWalletCreate(){
         return this.playerWalletCreate;
     }
+    public PlayerWalletGet playerWalletGet(){return this.playerWalletGet; }
 
-    public TableExists tableExists(){
-        return this.tableExists;
+    public boolean tableExists(String table){
+        return this.tableExists.TableExists(table, this.GetConnection());
 
     }
 
@@ -194,10 +224,12 @@ public final class HMDB extends JavaPlugin {
   //  public GetItemData getItemData(String item){
   //      return this.getItemData = new GetItemData(this, item);
  //   }
-
+    public MassEconDataGet massEconDataGet(){
+        return this.massEconDataGet;
+    }
 
     public Connection GetConnection() {
-        return  this.connect.GetConnection();
+        return  this.connection;
     }
 
     public TableSetup tableSetup() {
@@ -207,6 +239,9 @@ public final class HMDB extends JavaPlugin {
 
     @Override
     public void onDisable() {
+        MySQL.disconnect();
+        getLogger().info("Disconnected From Database.");
+
         // Plugin shutdown logic
     }
 }

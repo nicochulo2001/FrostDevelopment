@@ -48,9 +48,8 @@ public class CompanyCreate {
         boolean pub = false;
         String exist = "SELECT * FROM companies WHERE uuid='" + UUID + "';";
         String sql;
-        TableExists test = main.tableExists();
 
-        boolean bool = test.TableExists("companies", main.GetConnection());
+        boolean bool = main.tableExists("companies");
         if (!bool) {
             tableSetup.OnTableSetup("companies", "compname VARCHAR(255), UUID VARCHAR(255), econbal VARCHAR(255), founder VARCHAR(255), stock VARCHAR(255), textcompdata BLOB, public VARCHAR(10)", this.connection);
             main.getLogger().info("Companies Table Generated.");

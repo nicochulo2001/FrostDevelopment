@@ -20,12 +20,16 @@ public class PlayerWalletCreate {
     }
 
     public boolean CheckBookCreate(String table) {
-        if (!this.main.tableExists().TableExists(table, this.connection)) {
+        if (!this.main.tableExists(table)) {
             try {
                 tableSetup.OnTableSetup(table, "transaction int NOT NULL PRIMARY KEY auto_increment,\n" +
                         "amount        double null,\n" +
-                        "destination   varchar(255)  null,\n" +
-                        "balance       double null,\n" +
+                        "price         double null, \n" +
+                        "reason        varchar(255)  null,\n" +
+                        "from          varchar(255)  null,\n" +
+                        "to            varchar(255)  null,\n" +
+                        "item          varchar(255) null,\n" +
+                        "balance       varchar(255) null,\n" +
                         "date_time   varchar(50) null", connection);
                 return true;
             } catch (SQLException e) {

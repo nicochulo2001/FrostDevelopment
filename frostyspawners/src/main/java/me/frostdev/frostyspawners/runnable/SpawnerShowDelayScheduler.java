@@ -1,0 +1,29 @@
+package me.frostdev.frostyspawners.runnable;
+
+import java.util.Iterator;
+import me.frostdev.frostyspawners.Frostyspawners;
+import me.frostdev.frostyspawners.spawners.Spawner;
+
+public class SpawnerShowDelayScheduler implements Runnable {
+    private Frostyspawners main;
+
+    public SpawnerShowDelayScheduler(Frostyspawners as) {
+        this.main = as;
+    }
+
+    public void run() {
+        Iterator var2 = this.main.getData().getSpawners().values().iterator();
+
+        while(true) {
+            while(var2.hasNext()) {
+                Spawner spawner = (Spawner)var2.next();
+                if (spawner.isEnabled() && spawner.getShowDelay()) {
+                    spawner.update();
+
+                }
+            }
+
+            return;
+        }
+    }
+}

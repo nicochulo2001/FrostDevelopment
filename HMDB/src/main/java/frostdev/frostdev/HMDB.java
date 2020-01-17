@@ -60,6 +60,10 @@ public final class HMDB extends JavaPlugin {
     private GetConfigData getConfigData;
     private MassEconDataGet massEconDataGet;
     private ItemAverageCommit averageCommit;
+    private CompanyPermissionsCreate permissionsCreate;
+    private CompanyPermissionsCommit permissionsCommit;
+    private CompanyPermissionsGet permissionsGet;
+    private CompanyRegionData regionData;
     @Override
     public void onEnable() {
         Config();
@@ -81,6 +85,7 @@ public final class HMDB extends JavaPlugin {
         this.companyCreate = new CompanyCreate();
         this.companyMembersCreate = new CompanyMembersCreate();
         this.playerWalletCreate = new PlayerWalletCreate(this, this.GetConnection());
+        this.permissionsCreate = new CompanyPermissionsCreate(this, this.GetConnection());
         getLogger().info("TableSetup instance initialized.");
         this.playerWalletCommit = new PlayerWalletCommit(this);
         this.companyDataCommit = new CompanyDataCommit(this.GetConnection());
@@ -88,19 +93,18 @@ public final class HMDB extends JavaPlugin {
         this.playerWalletGet = new PlayerWalletGet(this);
         this.companyExists = new CompanyExists(this.GetConnection());
         this.companyMembersCommit = new CompanyMembersCommit(this, this.GetConnection());
+        this.permissionsCommit = new CompanyPermissionsCommit(this, this.GetConnection());
+        this.regionData = new CompanyRegionData(this, this.GetConnection());
         getLogger().info("CompanyCreate instance initialized.");
-
         getLogger().info("CompanyData instance initialized.");
-
         getLogger().info("CompanyMemberCreate instance initialized.");
-
         getLogger().info("CompanyMemberCommit instance initialized.");
-
         getLogger().info("Company instances initialized.");
         this.playerDataCommit = new PlayerDataCommit(this.GetConnection());
         this.averageCommit = new ItemAverageCommit(this, this.connection);
         this.playerDataGet = new PlayerDataGet(this);
         this.massEconDataGet = new MassEconDataGet(this, this.GetConnection());
+        this.permissionsGet = new CompanyPermissionsGet(this, this.GetConnection());
         getLogger().info("PlayerData instances initialized.");
         getLogger().info("ItemStack instances initialized.");
         this.getCommand("HMDB").setExecutor(new CommandHMDB(this));
@@ -235,6 +239,14 @@ public final class HMDB extends JavaPlugin {
     public TableSetup tableSetup() {
         return this.tableSetup;
     }
+
+    public CompanyPermissionsCreate getPermissionsCreate(){return this.permissionsCreate;}
+
+    public CompanyPermissionsCommit getPermissionsCommit() {return this.permissionsCommit;}
+
+    public CompanyPermissionsGet getPermissionsGet() {return this.permissionsGet;}
+
+    public CompanyRegionData getRegionData()  {return this.regionData;}
 
 
     @Override

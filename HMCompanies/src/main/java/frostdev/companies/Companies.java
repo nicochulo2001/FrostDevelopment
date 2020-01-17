@@ -1,5 +1,7 @@
 package frostdev.companies;
 
+import com.sk89q.worldguard.WorldGuard;
+import frostdev.companies.Company.CompanyUtil;
 import frostdev.companies.DBHandler.CompaniesCreateCompany;
 import frostdev.frostdev.HMDB;
 import org.bukkit.Bukkit;
@@ -15,12 +17,16 @@ public final class Companies extends JavaPlugin {
     private HMDB database;
     private CompaniesCreateCompany companycreate;
     private String returnstmt;
+    private CompanyUtil util;
+    private WorldGuard worldGuard;
 
     @Override
     public void onEnable() {
         database = JavaPlugin.getPlugin(HMDB.class);
+        this.worldGuard = WorldGuard.getInstance();
         this.connection = database.GetConnection();
         this.companycreate = new CompaniesCreateCompany();
+        this.util =  new CompanyUtil(this);
         this.getCommand("comp").setExecutor(new Command(this));
         // Plugin startup logic
 

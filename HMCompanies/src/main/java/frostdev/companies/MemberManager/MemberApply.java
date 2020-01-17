@@ -14,9 +14,6 @@ public class MemberApply {
     }
 
     public void apply(String player, String CUUID){
-        String UUID = database.getPlayerData(player).ReturnPlayerUUID();
-        database.companyMembersCommit().MemberCommit(player, CUUID);
-        database.companyMembersCommit().TitleCommit(UUID, CUUID, "Applicant");
-        database.companyMembersCommit().UUIDCommit(UUID, CUUID);
+
     }
 }
